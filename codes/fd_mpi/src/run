@@ -1,0 +1,7 @@
+
+# module load intel
+# module load impi 
+ 
+rm *.plt
+
+mpirun -n 4 ./fd -nPEx 2 -nPEy 2 -nCellx 10 -nCelly 10  
