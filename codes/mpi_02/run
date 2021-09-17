@@ -1,0 +1,16 @@
+
+
+mpirun -n 9 --oversubscribe ./main > tmp
+
+./do_tty 0
+./do_tty 1
+./do_tty 2
+./do_tty 3
+./do_tty 4
+./do_tty 5
+./do_tty 6
+./do_tty 7
+./do_tty 8
+
+
+

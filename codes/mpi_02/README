@@ -1,0 +1,4 @@
+
+Running ./run will execute the code and then post-process the
+tty output into individual files, one for each PE's output.
+
