@@ -206,15 +206,101 @@ class mpiInfo
   //  ||
   //  ==
 
+
   void ParticleExchange( VI &ptcl_send_list , VI &ptcl_send_PE , particles &PTCL)
   {
-
-    // This will be provided on Friday, for Lab 04.  I am waiting to commit this
-    // code for you because there is a student who has not yet submitted the
-    // Lab 03 post-lab report, which involves writing this routine. The focus
-    // this week, in Lab 04, is the routine below.  Please focus on it for
-    // now.  And, again, this routine will be provided for you.
     
+    // (1) Get the max number particles to be send by any particular processor, and make sure all processors  know that number.
+
+    int numToSend = ptcl_send_list.size();      int maxToSend;
+    
+    MPI_Allreduce( &numToSend, &maxToSend, 1 , MPI_INT, MPI_MAX, MPI_COMM_WORLD);    
+
+    // (2) Allocate contributions to the upcoming Gather operation.  Here, "C" for "Contribution" to be Gathered
+                                                                                             
+    int    *Cptcl_PE;  Cptcl_PE = new int    [maxToSend];  // Particles' destination PEs 
+    double *Cptcl_x ;  Cptcl_x  = new double [maxToSend];
+    double *Cptcl_y ;  Cptcl_y  = new double [maxToSend];
+    double *Cptcl_vx;  Cptcl_vx = new double [maxToSend];
+    double *Cptcl_vy;  Cptcl_vy = new double [maxToSend];
+
+    // (3) Populate contributions on all processors for the upcoming Gather operation
+
+    for ( int i = 0 ; i < maxToSend ; ++i ) { Cptcl_PE[i] = -1; Cptcl_x [i] = 0.; Cptcl_y [i] = 0.; Cptcl_vx[i] = 0.; Cptcl_vy[i] = 0.; }
+
+
+    // (4) Populate with all the particles on this PE.  Note that some/most processors will have left-over space in the C* arrays.
+    
+    for ( int i = 0 ; i < ptcl_send_list.size() ; ++i )
+      {
+	int id      = ptcl_send_list[ i];
+	Cptcl_PE[i] = ptcl_send_PE  [ i];
+	Cptcl_x [i] = PTCL.x        [id];
+	Cptcl_y [i] = PTCL.y        [id];
+	Cptcl_vx[i] = PTCL.vx       [id];
+	Cptcl_vy[i] = PTCL.vy       [id];
+      }
+
+    // (5) Allocate and initialize the arrays for upcoming Gather operation to PE0.  The sizeOfGather takes
+    //     into account the number of processors, like this figure:
+    //
+    //     |<----------------------------- sizeOfGather ------------------------------>|  
+    //     |                                                                           |
+    //     |                                                                           |
+    //     |<- maxToSend    ->|<- maxToSend    ->|<- maxToSend    ->|<- maxToSend    ->| 
+    //     +------------------+------------------+------------------+------------------+
+    //             PE0               PE1                PE2               PE3           
+
+    int sizeOfGather = maxToSend*numPE;                                                    
+
+    int    *Gptcl_PE;  Gptcl_PE = new int    [sizeOfGather];                                 
+    double *Gptcl_x ;  Gptcl_x  = new double [sizeOfGather];
+    double *Gptcl_y ;  Gptcl_y  = new double [sizeOfGather];
+    double *Gptcl_vx;  Gptcl_vx = new double [sizeOfGather];
+    double *Gptcl_vy;  Gptcl_vy = new double [sizeOfGather];
+    
+    for ( int i = 0 ; i < sizeOfGather ; ++i ) { Gptcl_PE[i] = -1; Gptcl_x [i] = 0.; Gptcl_y [i] = 0.; Gptcl_vx[i] = 0.; Gptcl_vy[i] = 0.;  }
+
+    
+    // (6)  Gather "Contributions" ("C" arrays) from all PEs onto all PEs into these bigger arrays so all PE will know what particles
+    //      need to go where.
+    
+    MPI_Barrier(MPI_COMM_WORLD);
+    
+    MPI_Allgather( Cptcl_PE , maxToSend , MPI_INT   , Gptcl_PE , maxToSend , MPI_INT   ,  MPI_COMM_WORLD); 
+    MPI_Allgather( Cptcl_x  , maxToSend , MPI_DOUBLE, Gptcl_x  , maxToSend , MPI_DOUBLE,  MPI_COMM_WORLD); 
+    MPI_Allgather( Cptcl_y  , maxToSend , MPI_DOUBLE, Gptcl_y  , maxToSend , MPI_DOUBLE,  MPI_COMM_WORLD); 
+    MPI_Allgather( Cptcl_vx , maxToSend , MPI_DOUBLE, Gptcl_vx , maxToSend , MPI_DOUBLE,  MPI_COMM_WORLD); 
+    MPI_Allgather( Cptcl_vy , maxToSend , MPI_DOUBLE, Gptcl_vy , maxToSend , MPI_DOUBLE,  MPI_COMM_WORLD); 
+
+    MPI_Barrier(MPI_COMM_WORLD);
+
+    // (7) Put in vector form so they can be added to PTCL.  These arrays are 1-based.
+
+    int Np = 0;  for ( int i = 0 ; i < sizeOfGather ; ++i ) if ( Gptcl_PE[i] == myPE ) ++Np; 
+    
+    VD  std_add_x  ;  std_add_x.resize  ( Np+1 );
+    VD  std_add_y  ;  std_add_y.resize  ( Np+1 );
+    VD  std_add_vx ;  std_add_vx.resize ( Np+1 );
+    VD  std_add_vy ;  std_add_vy.resize ( Np+1 );
+
+    int count = 1;
+    for ( int i = 0 ; i < sizeOfGather ; ++i )
+      if ( Gptcl_PE[i] == myPE )            
+	{
+	  std_add_x [count] = Gptcl_x[i];   
+	  std_add_y [count] = Gptcl_y [i];  
+	  std_add_vx[count] = Gptcl_vx[i];  
+	  std_add_vy[count] = Gptcl_vy[i];  
+	  ++count;                          
+	}
+
+    PTCL.add(std_add_x , std_add_y, std_add_vx , std_add_vy );
+
+    // (8) Free up memory
+
+    if (maxToSend    > 0 ) { delete[] Cptcl_PE;  delete[] Cptcl_x ;  delete[] Cptcl_y ; delete[] Cptcl_vx ; delete[] Cptcl_vy;  }
+    if (sizeOfGather > 0 ) { delete[] Gptcl_PE;  delete[] Gptcl_x ;  delete[] Gptcl_y ; delete[] Gptcl_vx ; delete[] Gptcl_vy;  }
 
   }
 
