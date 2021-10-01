@@ -1,0 +1,26 @@
+
+
+------------------------------
+Mount Summit's Filesystem
+------------------------------
+
+                                                        Mount point on
+                                + ---- Your user name   your local filesystem --+ 
+                                |                                               |
+                                |                                               |
+                                |                                               |
+			       -------                                       --------
+(1) Enter: sshfs -o idmap=user scru5660@login.rc.colorado.edu:/home/scru5660 ~/summit
+
+           Then enter password and then authenticate
+
+------------------------------
+Un-Mount Summit's Filesystem
+------------------------------
+
+(2) Enter: fusermount -u ~/summit
+
+
+
+
+
