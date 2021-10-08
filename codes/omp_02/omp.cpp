@@ -51,8 +51,8 @@ int main(  int argc, char *argv[] )
   // 1 meaning converged.
   
   int *THconverged = new int [  numTH  ];                  
-  
-
+    
+ printf("Loop 1: We are %d threads, I am thread %d.\n", omp_get_num_threads(), omp_get_thread_num());
 // =================================================================================== //
 // =======================         BEGIN PARALLEL REGION          ==================== //
 // =================================================================================== //
@@ -61,6 +61,7 @@ int main(  int argc, char *argv[] )
   {
     int myTH = omp_get_thread_num();  
 
+	
     // ------------------------------------------------------------------------------------
     // (1) Compute this thread's bounds in the global system:
     //
@@ -70,7 +71,7 @@ int main(  int argc, char *argv[] )
     // ------------------------------------------------------------------------------------
 
     int numPerTH =    nField/numTH  ;                       
-    int Lower    =    myTH*numPerTh  ;                      
+    int Lower    =    myTH*numPerTH  ;                      
     int Upper    =    Lower + numPerTH -1  ;               
 
     //  (1.1) Adjust Upper for the last (highest numbered) thread to ensure all the rows of the global system are handled
@@ -180,7 +181,7 @@ int main(  int argc, char *argv[] )
 
 	for (int row = Lower; row <= Upper; row++)                        
 	  {
-	    int row_TH =  row - Lower:  Convert row variable to thread local row ;                                         
+	    int row_TH =  row - Lower;  //Convert row variable to thread local row ;                                         
 	    
 	    phiNew[  row_TH ] = b[  row_TH ];                                       
 	    
@@ -209,7 +210,7 @@ int main(  int argc, char *argv[] )
 	
 	for ( int row = Lower; row <= Upper; row++ )                    
 	  {
-	    int row_TH =  TO-DO:  Convert row variable to thread local row ;                                     
+	    int row_TH =  row - Lower;  //Convert row variable to thread local row ;                                     
 	    phi[row] = phiNew[row_TH];                                    
 	  }
       }

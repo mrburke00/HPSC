@@ -1,0 +1,11 @@
+==
+||
+|| Begin Execution of fd in slurm batch script.
+||
+==
+Jacobi converged in 46654 iterations.[ main ] EXECUTION TIME  = 65649696 (ms)
+==
+||
+|| Execution of fd in slurm batch script complete.
+||
+==
