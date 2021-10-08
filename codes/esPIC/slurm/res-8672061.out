@@ -1,0 +1,196 @@
+==
+||
+|| Begin Execution of fd in slurm batch script.
+||
+==
+==173817== Cachegrind, a cache and branch-prediction profiler
+==173818== Cachegrind, a cache and branch-prediction profiler
+==173818== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==173818== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==173818== Command: ../src/./esPIC -nPEx 2 -nPEy 2 -nCellx 12 -nCelly 12 -nPtcl 50000 -flux 1000 -tEnd .2 -dt .01 -tPlot .1
+==173818== 
+--173818-- warning: L3 cache found, using its data for the LL simulation.
+--173818-- warning: specified LL cache: line_size 64  assoc 20  total_size 31,457,280
+--173818-- warning: simulated LL cache: line_size 64  assoc 30  total_size 31,457,280
+==173815== Cachegrind, a cache and branch-prediction profiler
+==173815== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==173815== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==173815== Command: ../src/./esPIC -nPEx 2 -nPEy 2 -nCellx 12 -nCelly 12 -nPtcl 50000 -flux 1000 -tEnd .2 -dt .01 -tPlot .1
+==173816== Cachegrind, a cache and branch-prediction profiler
+==173816== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==173816== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==173816== Command: ../src/./esPIC -nPEx 2 -nPEy 2 -nCellx 12 -nCelly 12 -nPtcl 50000 -flux 1000 -tEnd .2 -dt .01 -tPlot .1
+==173816== 
+--173816-- warning: L3 cache found, using its data for the LL simulation.
+--173816-- warning: specified LL cache: line_size 64  assoc 20  total_size 31,457,280
+--173816-- warning: simulated LL cache: line_size 64  assoc 30  total_size 31,457,280
+==173815== 
+--173815-- warning: L3 cache found, using its data for the LL simulation.
+--173815-- warning: specified LL cache: line_size 64  assoc 20  total_size 31,457,280
+--173815-- warning: simulated LL cache: line_size 64  assoc 30  total_size 31,457,280
+==173817== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==173817== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==173817== Command: ../src/./esPIC -nPEx 2 -nPEy 2 -nCellx 12 -nCelly 12 -nPtcl 50000 -flux 1000 -tEnd .2 -dt .01 -tPlot .1
+==173817== 
+--173817-- warning: L3 cache found, using its data for the LL simulation.
+--173817-- warning: specified LL cache: line_size 64  assoc 20  total_size 31,457,280
+--173817-- warning: simulated LL cache: line_size 64  assoc 30  total_size 31,457,280
+
+------------------------------------------------------
+
+ E L E C T R O S T I C   P A R T I C L E - I N - C E L L
+ D E M O   C O D E                           
+
+ Running on 4 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 2
+             y-direction: 2
+No. Cells in x-direction: 12
+             y-direction: 12
+Flux density            : 1000
+End Time                : 0.2
+Time Step               : 0.01
+Plot Interval           : 0.1
+
+Plotting output at time = 0.1 Latest matrix solver iteration count = 879
+==173818== 
+==173816== 
+==173817== 
+==173815== 
+==173816== I   refs:      3,463,073,054
+==173816== I1  misses:        7,259,494
+==173816== LLi misses:            8,987
+==173816== I1  miss rate:          0.21%
+==173816== LLi miss rate:          0.00%
+==173816== 
+==173816== D   refs:      2,266,033,849  (1,435,508,770 rd   + 830,525,079 wr)
+==173816== D1  misses:       14,689,894  (   11,852,131 rd   +   2,837,763 wr)
+==173816== LLd misses:          886,568  (       29,944 rd   +     856,624 wr)
+==173816== D1  miss rate:           0.6% (          0.8%     +         0.3%  )
+==173816== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==173816== 
+==173816== LL refs:          21,949,388  (   19,111,625 rd   +   2,837,763 wr)
+==173816== LL misses:           895,555  (       38,931 rd   +     856,624 wr)
+==173816== LL miss rate:            0.0% (          0.0%     +         0.1%  )
+==173818== I   refs:      3,482,621,344
+==173818== I1  misses:        6,848,244
+==173818== LLi misses:            8,990
+==173818== I1  miss rate:          0.20%
+==173818== LLi miss rate:          0.00%
+==173818== 
+==173818== D   refs:      2,276,366,475  (1,442,649,179 rd   + 833,717,296 wr)
+==173818== D1  misses:       14,682,390  (   11,779,683 rd   +   2,902,707 wr)
+==173818== LLd misses:          886,442  (       29,939 rd   +     856,503 wr)
+==173818== D1  miss rate:           0.6% (          0.8%     +         0.3%  )
+==173818== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==173818== 
+==173818== LL refs:          21,530,634  (   18,627,927 rd   +   2,902,707 wr)
+==173818== LL misses:           895,432  (       38,929 rd   +     856,503 wr)
+==173818== LL miss rate:            0.0% (          0.0%     +         0.1%  )
+==173817== I   refs:      3,465,949,831
+==173817== I1  misses:        6,880,554
+==173817== LLi misses:            9,095
+==173817== I1  miss rate:          0.20%
+==173817== LLi miss rate:          0.00%
+==173817== 
+==173817== D   refs:      2,304,299,491  (1,419,244,019 rd   + 885,055,472 wr)
+==173817== D1  misses:       15,028,297  (   12,184,864 rd   +   2,843,433 wr)
+==173817== LLd misses:          886,869  (       29,942 rd   +     856,927 wr)
+==173817== D1  miss rate:           0.7% (          0.9%     +         0.3%  )
+==173817== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==173817== 
+==173817== LL refs:          21,908,851  (   19,065,418 rd   +   2,843,433 wr)
+==173817== LL misses:           895,964  (       39,037 rd   +     856,927 wr)
+==173817== LL miss rate:            0.0% (          0.0%     +         0.1%  )
+==173815== I   refs:      3,450,941,653
+==173815== I1  misses:        6,544,415
+==173815== LLi misses:            9,235
+==173815== I1  miss rate:          0.19%
+==173815== LLi miss rate:          0.00%
+==173815== 
+==173815== D   refs:      2,297,578,969  (1,415,240,742 rd   + 882,338,227 wr)
+==173815== D1  misses:       14,781,160  (   11,973,375 rd   +   2,807,785 wr)
+==173815== LLd misses:          887,449  (       29,979 rd   +     857,470 wr)
+==173815== D1  miss rate:           0.6% (          0.8%     +         0.3%  )
+==173815== LLd miss rate:           0.0% (          0.0%     +         0.1%  )
+==173815== 
+==173815== LL refs:          21,325,575  (   18,517,790 rd   +   2,807,785 wr)
+==173815== LL misses:           896,684  (       39,214 rd   +     857,470 wr)
+==173815== LL miss rate:            0.0% (          0.0%     +         0.1%  )
+==173936== Callgrind, a call-graph generating cache profiler
+==173935== Callgrind, a call-graph generating cache profiler
+==173935== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==173935== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==173935== Command: ../src/./esPIC -nPEx 2 -nPEy 2 -nCellx 12 -nCelly 12 -nPtcl 50000 -flux 1000 -tEnd .2 -dt .01 -tPlot .1
+==173935== 
+==173936== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==173936== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==173936== Command: ../src/./esPIC -nPEx 2 -nPEy 2 -nCellx 12 -nCelly 12 -nPtcl 50000 -flux 1000 -tEnd .2 -dt .01 -tPlot .1
+==173936== 
+==173933== Callgrind, a call-graph generating cache profiler
+==173933== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==173933== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==173933== Command: ../src/./esPIC -nPEx 2 -nPEy 2 -nCellx 12 -nCelly 12 -nPtcl 50000 -flux 1000 -tEnd .2 -dt .01 -tPlot .1
+==173933== 
+==173934== Callgrind, a call-graph generating cache profiler
+==173934== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==173934== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==173934== Command: ../src/./esPIC -nPEx 2 -nPEy 2 -nCellx 12 -nCelly 12 -nPtcl 50000 -flux 1000 -tEnd .2 -dt .01 -tPlot .1
+==173934== 
+==173936== For interactive control, run 'callgrind_control -h'.
+==173933== For interactive control, run 'callgrind_control -h'.
+==173935== For interactive control, run 'callgrind_control -h'.
+==173934== For interactive control, run 'callgrind_control -h'.
+
+------------------------------------------------------
+
+ E L E C T R O S T I C   P A R T I C L E - I N - C E L L
+ D E M O   C O D E                           
+
+ Running on 4 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 2
+             y-direction: 2
+No. Cells in x-direction: 12
+             y-direction: 12
+Flux density            : 1000
+End Time                : 0.2
+Time Step               : 0.01
+Plot Interval           : 0.1
+
+Plotting output at time = 0.1 Latest matrix solver iteration count = 879
+==173936== 
+==173935== 
+==173934== 
+==173933== 
+==173936== Events    : Ir
+==173936== Collected : 3333196421
+==173936== 
+==173936== I   refs:      3,333,196,421
+==173935== Events    : Ir
+==173935== Collected : 3452684610
+==173935== 
+==173935== I   refs:      3,452,684,610
+==173934== Events    : Ir
+==173934== Collected : 3300331111
+==173934== 
+==173934== I   refs:      3,300,331,111
+==173933== Events    : Ir
+==173933== Collected : 3423869125
+==173933== 
+==173933== I   refs:      3,423,869,125
+==
+||
+|| Execution of fd in slurm batch script complete.
+||
+==
