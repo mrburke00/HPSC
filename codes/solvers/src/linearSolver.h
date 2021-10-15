@@ -119,10 +119,8 @@ double Dot(VD &vec1, VD &vec2 , mpiInfo &myMPI)
   int jMax = nRealy;
 
   // Adjust those loop limits for the parallel case
-
-    --- TO-DO in LAB --- 
-    --- TO-DO in LAB --- 
-
+  if ( myMPI.iPE < myMPI.nPEx-1 ) iMax = iMax - 1 ;
+  if ( myMPI.jPE < myMPI.nPEy-1 ) jMax = jMax - 1 ;
   for ( int i = 1 ; i <= iMax ; ++i ) 
   for ( int j = 1 ; j <= jMax ; ++j ) 
   {
@@ -229,7 +227,7 @@ void CG(VD &Solution , mpiInfo & myMPI)
   
   VD b_PEsum ;
   b_PEsum.resize(nField + 1 ) ;
-  rowLoop b_PEsum[row] = b[row]; 
+  rowLOOP b_PEsum[row] = b[row]; 
   myMPI.PEsum(b_PEsum);
   
   // (3) Initialize residual, r, and r dot r for CG algorithm
@@ -283,9 +281,8 @@ void CG(VD &Solution , mpiInfo & myMPI)
 	converged = 0;
       
       // (4.7) Check convergence across PEs, store result in "global_converged"
-
-    --- xTO-DO in LAB --- 
-
+     
+     MPI_Allreduce(&converged, &global_converged, 1, MPI_INT, MPI_MIN, MPI_COMM_WORLD);
     }
 
     // (5) Done - Inform user
