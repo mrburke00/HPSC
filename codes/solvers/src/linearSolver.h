@@ -131,11 +131,9 @@ double Dot(VD &vec1, VD &vec2 , mpiInfo &myMPI)
   }
 
   // Sum results across PEs and share that sum with all PEs
-
-    --- TO-DO in LAB --- 
-    --- TO-DO in LAB --- 
-
-  return  TO-DO ;                                                           
+  double sum_results = 0.; 
+  MPI_Allreduce(&sum, &sum_results, 1, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
+  return sum_results ;                                                           
 }
 
 
@@ -165,7 +163,7 @@ void MatVecProd(VD &p , VD &prod , mpiInfo &myMPI)
 
   // Handle PE boundaries
 
-    --- TO-DO in LAB --- 
+    myMPI.PEsum(prod); 
 }
 
 //  ==
@@ -231,8 +229,8 @@ void CG(VD &Solution , mpiInfo & myMPI)
   
   VD b_PEsum ;
   b_PEsum.resize(nField + 1 ) ;
-    --- TO-DO in LAB --- 
-    --- TO-DO in LAB --- 
+  rowLoop b_PEsum[row] = b[row]; 
+  myMPI.PEsum(b_PEsum);
   
   // (3) Initialize residual, r, and r dot r for CG algorithm
 
@@ -286,7 +284,7 @@ void CG(VD &Solution , mpiInfo & myMPI)
       
       // (4.7) Check convergence across PEs, store result in "global_converged"
 
-    --- TO-DO in LAB --- 
+    --- xTO-DO in LAB --- 
 
     }
 
