@@ -17,7 +17,7 @@
 # -
 
 #SBATCH --nodes=1
-#SBATCH --ntasks=1
+#SBATCH --ntasks=4
 #SBATCH --time=00:04:00
 #SBATCH --partition=shas-testing
 #SBATCH --output=ex01-%j.out
@@ -45,7 +45,7 @@ echo "||"
 echo "=="
 
 #mpirun -n 4 ./omp -nCell 4 -nTH 2 > tty.out
-#./omp -nCell 60 -nTH 2 
+mpirun -n 4 ./solvers -nPEx 2 -nPEy 2 -nCellx 4 -nCelly 4 -solver cg 
 
 echo "=="
 echo "||"
