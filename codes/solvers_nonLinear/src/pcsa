@@ -1,0 +1,10 @@
+splot \
+'phi_sa_0_0.plt' w l ,\
+'phi_sa_1_0.plt' w l ,\
+'phi_sa_2_0.plt' w l ,\
+'phi_sa_3_0.plt' w l ,\
+'phiMMS_0_0.plt' w p ,\
+'phiMMS_1_0.plt' w p ,\
+'phiMMS_2_0.plt' w p ,\
+'phiMMS_3_0.plt' w p ,\
+
