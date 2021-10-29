@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="0.1" 
+                             kind="DATAKIND_SUITABILITY" 
+                             duration_total="1.706233E+01"
+                             num_processors="8" 
+                             num_mic_threads="128" 
+                             threading_paradigm="tbb" 
+                             target_system="cpu" 
+                             program_max_gain="9.997030E-01" >
+  <site filename="/home/debu7497/HPSC/codes/solvers_nonLinear/src/linearSolver.h" 
+        line_no="247" 
+        label="CG">
+    <suitability duration_total="4.177630E+00" 
+                 num_instances="722">
+      <estimated_speedup>
+       <scaling threading_paradigm="tbb" 
+                site_overhead="false" 
+                task_overhead="false" 
+                task_chunking="false" 
+                lock_overhead="false" 
+                lock_contention="false" >
+          <scale cpu="8" speedup="4.182787E+00" />
+        </scaling>
+      </estimated_speedup>
+    </suitability>
+  </site>
+  <task filename="/home/debu7497/HPSC/codes/solvers_nonLinear/src/linearSolver.h" 
+        line_no="248" 
+        label="CG_Iteration" 
+        duration_total="4.176224E+00" 
+        num_instances="722" />
+</IntelParallelAdvisorSummary >

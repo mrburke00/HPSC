@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename="/home/debu7497/HPSC/codes/solvers_nonLinear/src/linearSolver.h"
+           line_no="160"
+           routine="LaplacianOnGrid::MatVecProd"
+           is_vectorized="0"
+           self_time="1.609490E+00"
+           total_time="2.599068E+00"
+           trip_counts=""
+           func_instance="617"
+           priority="0"/>
+  <hotspot filename="/home/debu7497/HPSC/codes/solvers_nonLinear/src/LaplacianOnGrid.h"
+           line_no="276"
+           routine="LaplacianOnGrid::ApplyBC"
+           is_vectorized="0"
+           self_time="3.930559E+00"
+           total_time="6.030839E+00"
+           trip_counts=""
+           func_instance="570"
+           priority="0"/>
+  <hotspot filename="/home/debu7497/HPSC/codes/solvers_nonLinear/src/linearSolver.h"
+           line_no="269"
+           routine="LaplacianOnGrid::CG"
+           is_vectorized="0"
+           self_time="1.999363E-01"
+           total_time="2.899124E-01"
+           trip_counts=""
+           func_instance="707"
+           priority="0"/>
+  <hotspot filename="/home/debu7497/HPSC/codes/solvers_nonLinear/src/linearSolver.h"
+           line_no="128"
+           routine="LaplacianOnGrid::Dot"
+           is_vectorized="0"
+           self_time="4.398881E-01"
+           total_time="6.499006E-01"
+           trip_counts=""
+           func_instance="686"
+           priority="0"/>
+  <hotspot filename="/home/debu7497/HPSC/codes/solvers_nonLinear/src/LaplacianOnGrid.h"
+           line_no="273"
+           routine="LaplacianOnGrid::ApplyBC"
+           is_vectorized="0"
+           self_time="1.900430E-01"
+           total_time="6.220882E+00"
+           trip_counts=""
+           func_instance="573"
+           priority="0"/>
+</IntelParallelAdvisorSummary >

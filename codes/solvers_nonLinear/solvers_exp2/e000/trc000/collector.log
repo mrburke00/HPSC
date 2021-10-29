@@ -1,0 +1,47 @@
+Analysis started...
+Collection has been started.
+Collection has been paused.
+Result file: /home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/trc000/trc000.advixe 
+Application exit code: 0 
+Result file: /home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/trc000/trc000.advixe 
+Analysis completed
+Finalizing results
+Finalizing the result
+Loading raw data to the database
+Loading 'tripcounts_28645_0.tcs' file
+Loading 'tripcounts_28755_0.tcs' file
+Loading 'tripcounts_28755_1.tcs' file
+Loading 'tripcounts_28840_0.tcs' file
+Loading 'tripcounts_28840_1.tcs' file
+Loading 'tripcounts_28840_2.tcs' file
+Error: Cannot load data file `/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/hs014/data.1/tripcounts_28755_0.tcs' (Data file is corrupted).
+Error: Cannot load data file `/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/hs014/data.1/tripcounts_28840_0.tcs' (Data file is corrupted).
+Error: Cannot load data file `/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/hs014/data.1/tripcounts_28840_1.tcs' (Data file is corrupted).
+Updating precomputed scalar metrics
+Raw data has been loaded to the database, elapsed time is 0.134 seconds.
+Processing profile metrics and debug information
+Data transformations have been finished, elapsed time is 0.000 seconds.
+Setting data model parameters
+Resolving module symbols
+Resolving information for dangling locations
+Symbol resolution has been finished, elapsed time is 0.131 seconds.
+Processing profile metrics and debug information
+Error: Error 0x40000024 (No data) -- No data is collected. Possible reasons:
+ - Workload is too small. No samples are collected.
+ - The application environment is not specified correctly.
+ - The executable file has been stripped so cannot be profiled with algorithm analysis types.
+ See the Troubleshooting help topic for more details.
+ Also consider checking the collection log for additional information. 
+Deferred data transformations have been finished, elapsed time is 0.006 seconds.
+Setting data model parameters
+Data model parameters have been set, elapsed time is 0.035 seconds.
+Precomputing frequently used data
+Precomputing frequently used data
+Updating precomputed scalar metrics
+Precomputing frequently used data has been finished, elapsed time is 0.020 seconds.
+Discarding redundant overtime data
+Saving the result
+Redundant overtime data has been discarded, elapsed time is 0.007 seconds.
+Raw collector data has been discarded, elapsed time is 0.000 seconds.
+Finalizing the result took 0.447 seconds.
+Preparing data for display of survey call tree

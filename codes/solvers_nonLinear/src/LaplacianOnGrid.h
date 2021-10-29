@@ -293,12 +293,17 @@ public:
   int NR_Phi_Update( double tolerance , double relax)
   {
     int converged = 1;
-    rLOOP
+    int numTH = 2;
+    omp_set_num_threads(numTH);
+    #pragma omp parallel shared(numTH)
+    {
+     rLOOP 
       {
 	phi[r] = phi[r]*relax + (1.-relax)*( phi[r] + dPhi[r] );
 	
 	if ( fabs( dPhi[r] ) > tolerance ) converged = 0;
       }
+    }
     return converged;
   }
 

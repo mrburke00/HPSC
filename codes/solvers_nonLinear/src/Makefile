@@ -48,6 +48,6 @@ endif
 
 
 solvers: solvers.cpp solvers.h linearSolver.h plotter.h mpiInfo.h LaplacianOnGrid.h
-	$(COMPILER) solvers.cpp -g -o solvers -std=c++11 -fopenmp -I /home/scott/intel/advisor_2020.2.0.606470/include -ldl
+	$(COMPILER) solvers.cpp -g -o solvers -std=c++11 -fopenmp -I /projects/scru5660/public/software/install/advisor_2020.2.0.606470/include -ldl
 
 

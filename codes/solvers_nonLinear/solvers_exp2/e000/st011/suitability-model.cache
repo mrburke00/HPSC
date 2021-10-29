@@ -1,0 +1,5079 @@
+(version 3 2)
+
+[ Sites ]
+(site CG 0 "/home/debu7497/HPSC/codes/solvers_nonLinear/src/linearSolver.h" 247 CG
+    "/home/debu7497/HPSC/codes/solvers_nonLinear/src/solvers" "LaplacianOnGrid::CG(std::vector<std::vector<double, std::allocator<double>>, std::allocator<std::vector<double, std::allocator<double>>>>&, std::vector<double, std::allocator<double>>&, std::vector<double, std::allocator<double>>&, mpiInfo&)" "/home/debu7497/HPSC/codes/solvers_nonLinear/src/linearSolver.h" 247 "0xc59e" NATIVE CALL
+    "/home/debu7497/HPSC/codes/solvers_nonLinear/src/solvers" main "/home/debu7497/HPSC/codes/solvers_nonLinear/src/solvers.cpp" 125 "0x4632" NATIVE CALL
+    "/lib64/libc.so.6" __libc_start_main "" -1 "0x21b49" NATIVE CALL
+    "/home/debu7497/HPSC/codes/solvers_nonLinear/src/solvers" _start "" -1 "0x2df8" NATIVE CALL
+    "[stack]" "[stack]" "" -1 "0x1ed67" NATIVE CALL
+)
+
+[ Tasks ]
+(task CG_Iteration 0 "/home/debu7497/HPSC/codes/solvers_nonLinear/src/linearSolver.h" 248 CG_Iteration
+    "/home/debu7497/HPSC/codes/solvers_nonLinear/src/solvers" "LaplacianOnGrid::CG(std::vector<std::vector<double, std::allocator<double>>, std::allocator<std::vector<double, std::allocator<double>>>>&, std::vector<double, std::allocator<double>>&, std::vector<double, std::allocator<double>>&, mpiInfo&)" "/home/debu7497/HPSC/codes/solvers_nonLinear/src/linearSolver.h" 248 "0xc5e9" NATIVE CALL
+    "/home/debu7497/HPSC/codes/solvers_nonLinear/src/solvers" main "/home/debu7497/HPSC/codes/solvers_nonLinear/src/solvers.cpp" 125 "0x4632" NATIVE CALL
+    "/lib64/libc.so.6" __libc_start_main "" -1 "0x21b49" NATIVE CALL
+    "/home/debu7497/HPSC/codes/solvers_nonLinear/src/solvers" _start "" -1 "0x2df8" NATIVE CALL
+    "[stack]" "[stack]" "" -1 "0x1ed67" NATIVE CALL
+)
+
+[ Locks ]
+
+[ Program ]
+(para CG 1 1
+  (comp 79384 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 157264168 0 0 0 0 0)
+  )
+)
+(para CG 1 1
+  (comp 15612 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64031156 0 0 0 0 0)
+  )
+  (comp 11660 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 26308 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63282960 0 0 0 0 0)
+  )
+  (comp 15612 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 14000 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 73498388 0 0 0 0 0)
+  )
+  (comp 8896 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 13904 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 72933164 0 0 0 0 0)
+  )
+  (comp 8412 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12800 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 72901988 0 0 0 0 0)
+  )
+  (comp 8012 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 20800 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69680160 0 0 0 0 0)
+  )
+  (comp 13516 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12184 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69419336 0 0 0 0 0)
+  )
+  (comp 8716 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 13128 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 65240360 0 0 0 0 0)
+  )
+  (comp 8364 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11952 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 70262788 0 0 0 0 0)
+  )
+  (comp 7720 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11712 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68709256 0 0 0 0 0)
+  )
+  (comp 7928 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11384 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66965476 0 0 0 0 0)
+  )
+  (comp 7784 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11420 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69946528 0 0 0 0 0)
+  )
+  (comp 7540 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11636 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67019204 0 0 0 0 0)
+  )
+  (comp 7528 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11516 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67320464 0 0 0 0 0)
+  )
+  (comp 7152 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10996 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 65919532 0 0 0 0 0)
+  )
+  (comp 7356 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11440 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67744600 0 0 0 0 0)
+  )
+  (comp 7600 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11304 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67494944 0 0 0 0 0)
+  )
+  (comp 7928 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10948 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63990072 0 0 0 0 0)
+  )
+  (comp 7464 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11624 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66349544 0 0 0 0 0)
+  )
+  (comp 7356 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11840 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64104928 0 0 0 0 0)
+  )
+  (comp 6884 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10984 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63494304 0 0 0 0 0)
+  )
+  (comp 7080 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11660 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66763000 0 0 0 0 0)
+  )
+  (comp 7020 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10668 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68090692 0 0 0 0 0)
+  )
+  (comp 7272 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11272 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66997816 0 0 0 0 0)
+  )
+  (comp 7040 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11360 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67661728 0 0 0 0 0)
+  )
+  (comp 7276 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 277828 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68872320 0 0 0 0 0)
+  )
+  (comp 10388 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11684 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63726596 0 0 0 0 0)
+  )
+  (comp 8072 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12580 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 65212608 0 0 0 0 0)
+  )
+  (comp 7600 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11612 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64410588 0 0 0 0 0)
+  )
+  (comp 7212 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11684 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62304216 0 0 0 0 0)
+  )
+  (comp 7696 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11396 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 59968824 0 0 0 0 0)
+  )
+  (comp 7308 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11708 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 59077580 0 0 0 0 0)
+  )
+  (comp 7672 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11688 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56777412 0 0 0 0 0)
+  )
+  (comp 7028 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11624 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 55071484 0 0 0 0 0)
+  )
+  (comp 7480 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11612 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 53378008 0 0 0 0 0)
+  )
+  (comp 7324 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11552 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 52184896 0 0 0 0 0)
+  )
+  (comp 7452 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10972 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49960236 0 0 0 0 0)
+  )
+  (comp 7492 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11564 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49586136 0 0 0 0 0)
+  )
+  (comp 7056 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10924 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 50114524 0 0 0 0 0)
+  )
+  (comp 7212 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11176 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 47365904 0 0 0 0 0)
+  )
+  (comp 7340 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11600 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 47762248 0 0 0 0 0)
+  )
+  (comp 6884 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11152 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 50467736 0 0 0 0 0)
+  )
+  (comp 7056 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11456 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63164952 0 0 0 0 0)
+  )
+  (comp 7152 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11840 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 60579408 0 0 0 0 0)
+  )
+  (comp 7212 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11392 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56988608 0 0 0 0 0)
+  )
+  (comp 7472 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11708 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 55397100 0 0 0 0 0)
+  )
+  (comp 7372 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 23624 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 55006544 0 0 0 0 0)
+  )
+  (comp 14684 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12184 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 50674276 0 0 0 0 0)
+  )
+  (comp 8824 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12848 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 59400420 0 0 0 0 0)
+  )
+  (comp 8616 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12212 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68822348 0 0 0 0 0)
+  )
+  (comp 8872 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11976 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68267052 0 0 0 0 0)
+  )
+  (comp 7636 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11892 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67488616 0 0 0 0 0)
+  )
+  (comp 7840 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11716 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67114944 0 0 0 0 0)
+  )
+  (comp 7532 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10940 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67087520 0 0 0 0 0)
+  )
+  (comp 7716 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11140 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68165768 0 0 0 0 0)
+  )
+  (comp 7720 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10484 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64758064 0 0 0 0 0)
+  )
+  (comp 8000 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10620 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63872968 0 0 0 0 0)
+  )
+  (comp 7236 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11140 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64086700 0 0 0 0 0)
+  )
+  (comp 7804 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10520 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 58916860 0 0 0 0 0)
+  )
+  (comp 7488 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10920 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63249528 0 0 0 0 0)
+  )
+  (comp 7624 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11176 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63906232 0 0 0 0 0)
+  )
+  (comp 8148 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10616 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61433252 0 0 0 0 0)
+  )
+  (comp 7732 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10896 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64237112 0 0 0 0 0)
+  )
+  (comp 7952 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11248 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 65161860 0 0 0 0 0)
+  )
+  (comp 7612 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11564 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62743016 0 0 0 0 0)
+  )
+  (comp 7364 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11356 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 65712944 0 0 0 0 0)
+  )
+  (comp 7708 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11300 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63508000 0 0 0 0 0)
+  )
+  (comp 7436 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11080 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63486300 0 0 0 0 0)
+  )
+  (comp 7248 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10848 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 65309952 0 0 0 0 0)
+  )
+  (comp 7080 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10956 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63938852 0 0 0 0 0)
+  )
+  (comp 7260 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10764 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63828256 0 0 0 0 0)
+  )
+  (comp 7432 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10764 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 65164204 0 0 0 0 0)
+  )
+  (comp 7288 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11480 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 65192580 0 0 0 0 0)
+  )
+  (comp 7264 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11152 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66716348 0 0 0 0 0)
+  )
+  (comp 7636 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11272 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64383176 0 0 0 0 0)
+  )
+  (comp 7588 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11356 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66202804 0 0 0 0 0)
+  )
+  (comp 7728 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10556 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62918772 0 0 0 0 0)
+  )
+  (comp 7504 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10776 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 59716332 0 0 0 0 0)
+  )
+  (comp 7236 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10980 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64409860 0 0 0 0 0)
+  )
+  (comp 7396 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11276 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62151072 0 0 0 0 0)
+  )
+  (comp 7288 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11372 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63412528 0 0 0 0 0)
+  )
+  (comp 7924 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11976 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63157164 0 0 0 0 0)
+  )
+  (comp 7860 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11460 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 59711840 0 0 0 0 0)
+  )
+  (comp 8012 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11484 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 65674736 0 0 0 0 0)
+  )
+  (comp 7704 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11600 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64699748 0 0 0 0 0)
+  )
+  (comp 8144 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11492 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62455188 0 0 0 0 0)
+  )
+  (comp 7808 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10680 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 60510508 0 0 0 0 0)
+  )
+  (comp 7436 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10968 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 65434440 0 0 0 0 0)
+  )
+  (comp 7492 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11076 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64432464 0 0 0 0 0)
+  )
+  (comp 7368 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11380 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 60328028 0 0 0 0 0)
+  )
+  (comp 7480 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11528 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56187112 0 0 0 0 0)
+  )
+  (comp 7864 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11380 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61123400 0 0 0 0 0)
+  )
+  (comp 7384 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11028 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61843152 0 0 0 0 0)
+  )
+  (comp 7480 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11224 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61425684 0 0 0 0 0)
+  )
+  (comp 7588 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11564 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 57273464 0 0 0 0 0)
+  )
+  (comp 7532 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11164 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 54316084 0 0 0 0 0)
+  )
+  (comp 8620 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10988 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 53666412 0 0 0 0 0)
+  )
+  (comp 7284 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11392 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61304928 0 0 0 0 0)
+  )
+  (comp 7516 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11588 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64822500 0 0 0 0 0)
+  )
+  (comp 7412 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10664 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61833224 0 0 0 0 0)
+  )
+  (comp 7148 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10812 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62626648 0 0 0 0 0)
+  )
+  (comp 7424 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11116 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63823132 0 0 0 0 0)
+  )
+  (comp 7272 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11420 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61669380 0 0 0 0 0)
+  )
+  (comp 7424 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11808 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 58900112 0 0 0 0 0)
+  )
+  (comp 7244 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11820 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 55837340 0 0 0 0 0)
+  )
+  (comp 7012 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10920 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62789900 0 0 0 0 0)
+  )
+  (comp 7028 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11092 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61130108 0 0 0 0 0)
+  )
+  (comp 7020 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10944 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62294284 0 0 0 0 0)
+  )
+  (comp 6992 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11784 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 58538404 0 0 0 0 0)
+  )
+  (comp 7128 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11036 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64117864 0 0 0 0 0)
+  )
+  (comp 7340 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11268 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64574260 0 0 0 0 0)
+  )
+  (comp 7272 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11200 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61651380 0 0 0 0 0)
+  )
+  (comp 7312 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10888 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62477320 0 0 0 0 0)
+  )
+  (comp 7272 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11260 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62871320 0 0 0 0 0)
+  )
+  (comp 7388 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11152 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63083748 0 0 0 0 0)
+  )
+  (comp 7028 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10896 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61458784 0 0 0 0 0)
+  )
+  (comp 7280 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10988 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64993352 0 0 0 0 0)
+  )
+  (comp 7176 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11272 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63442596 0 0 0 0 0)
+  )
+  (comp 7444 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11164 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64270716 0 0 0 0 0)
+  )
+  (comp 7528 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11540 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64768100 0 0 0 0 0)
+  )
+  (comp 7388 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10924 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62015896 0 0 0 0 0)
+  )
+  (comp 7340 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11564 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64470384 0 0 0 0 0)
+  )
+  (comp 7296 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11856 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61682112 0 0 0 0 0)
+  )
+  (comp 7328 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11440 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 85674708 0 0 0 0 0)
+  )
+  (comp 7260 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11128 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 84519592 0 0 0 0 0)
+  )
+  (comp 7436 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11648 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63564040 0 0 0 0 0)
+  )
+  (comp 7364 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10932 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 89930276 0 0 0 0 0)
+  )
+  (comp 7200 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10996 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 59672304 0 0 0 0 0)
+  )
+  (comp 7272 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10764 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 83941316 0 0 0 0 0)
+  )
+  (comp 7128 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11200 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 88311980 0 0 0 0 0)
+  )
+  (comp 7372 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11008 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62395332 0 0 0 0 0)
+  )
+  (comp 8304 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11140 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 89060688 0 0 0 0 0)
+  )
+  (comp 7636 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11104 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 88282344 0 0 0 0 0)
+  )
+  (comp 7056 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11092 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61160536 0 0 0 0 0)
+  )
+  (comp 7612 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10836 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 90305944 0 0 0 0 0)
+  )
+  (comp 7352 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11472 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56557256 0 0 0 0 0)
+  )
+  (comp 7564 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12192 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 91714616 0 0 0 0 0)
+  )
+  (comp 7352 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11340 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 89203828 0 0 0 0 0)
+  )
+  (comp 7504 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11056 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64055864 0 0 0 0 0)
+  )
+  (comp 7588 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11052 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 87029568 0 0 0 0 0)
+  )
+  (comp 7284 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10788 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 91821752 0 0 0 0 0)
+  )
+  (comp 7472 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11248 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61739412 0 0 0 0 0)
+  )
+  (comp 7460 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11456 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61994344 0 0 0 0 0)
+  )
+  (comp 7480 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11892 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 91423828 0 0 0 0 0)
+  )
+  (comp 8000 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11320 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 93315628 0 0 0 0 0)
+  )
+  (comp 7588 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11832 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61624256 0 0 0 0 0)
+  )
+  (comp 7488 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11200 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 85736220 0 0 0 0 0)
+  )
+  (comp 7564 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11304 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 85708676 0 0 0 0 0)
+  )
+  (comp 7636 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11660 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 55794788 0 0 0 0 0)
+  )
+  (comp 7636 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11320 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56375260 0 0 0 0 0)
+  )
+  (comp 7492 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11496 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 78579044 0 0 0 0 0)
+  )
+  (comp 7624 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11340 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 78855920 0 0 0 0 0)
+  )
+  (comp 7784 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11748 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63167332 0 0 0 0 0)
+  )
+  (comp 7348 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11540 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 89686208 0 0 0 0 0)
+  )
+  (comp 7304 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11132 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 87181216 0 0 0 0 0)
+  )
+  (comp 7024 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10728 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56588452 0 0 0 0 0)
+  )
+  (comp 7436 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11284 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56004916 0 0 0 0 0)
+  )
+  (comp 7428 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11492 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 83942436 0 0 0 0 0)
+  )
+  (comp 7660 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11068 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 91466660 0 0 0 0 0)
+  )
+  (comp 7392 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11408 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 57959720 0 0 0 0 0)
+  )
+  (comp 7248 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11020 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 92094480 0 0 0 0 0)
+  )
+  (comp 7504 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10944 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 86428164 0 0 0 0 0)
+  )
+  (comp 7044 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11684 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 59127256 0 0 0 0 0)
+  )
+  (comp 7168 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11152 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62265968 0 0 0 0 0)
+  )
+  (comp 7040 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11372 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 89623496 0 0 0 0 0)
+  )
+  (comp 7260 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11328 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 88557832 0 0 0 0 0)
+  )
+  (comp 8692 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11316 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56918632 0 0 0 0 0)
+  )
+  (comp 7552 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10976 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 80954944 0 0 0 0 0)
+  )
+  (comp 7356 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11672 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 87946096 0 0 0 0 0)
+  )
+  (comp 7292 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10956 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 60225964 0 0 0 0 0)
+  )
+  (comp 7728 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10692 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61327608 0 0 0 0 0)
+  )
+  (comp 7732 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10340 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 88593220 0 0 0 0 0)
+  )
+  (comp 7296 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11260 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 86747760 0 0 0 0 0)
+  )
+  (comp 7368 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11040 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 58755180 0 0 0 0 0)
+  )
+  (comp 7152 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10764 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 87722556 0 0 0 0 0)
+  )
+  (comp 7176 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11116 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61412792 0 0 0 0 0)
+  )
+  (comp 7212 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11516 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 85958192 0 0 0 0 0)
+  )
+  (comp 7152 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11480 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 87286928 0 0 0 0 0)
+  )
+  (comp 7188 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11468 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 57687032 0 0 0 0 0)
+  )
+  (comp 7308 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10556 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 83636412 0 0 0 0 0)
+  )
+  (comp 7112 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11044 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 89661536 0 0 0 0 0)
+  )
+  (comp 7516 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10868 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 55937852 0 0 0 0 0)
+  )
+  (comp 7224 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11164 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 81068336 0 0 0 0 0)
+  )
+  (comp 6996 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12084 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 77725216 0 0 0 0 0)
+  )
+  (comp 7032 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11128 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 51960032 0 0 0 0 0)
+  )
+  (comp 20448 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 21020 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 81412300 0 0 0 0 0)
+  )
+  (comp 10328 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 13064 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 80620356 0 0 0 0 0)
+  )
+  (comp 8172 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 13008 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 48432340 0 0 0 0 0)
+  )
+  (comp 7904 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11988 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 52061280 0 0 0 0 0)
+  )
+  (comp 6712 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11320 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 79065720 0 0 0 0 0)
+  )
+  (comp 7784 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11372 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 84227128 0 0 0 0 0)
+  )
+  (comp 7444 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11320 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 58382748 0 0 0 0 0)
+  )
+  (comp 7440 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11068 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 83626092 0 0 0 0 0)
+  )
+  (comp 7516 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11308 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 80342552 0 0 0 0 0)
+  )
+  (comp 7612 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10920 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56192208 0 0 0 0 0)
+  )
+  (comp 7672 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10984 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 55902524 0 0 0 0 0)
+  )
+  (comp 8496 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11360 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 80352728 0 0 0 0 0)
+  )
+  (comp 7708 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11696 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 80929564 0 0 0 0 0)
+  )
+  (comp 7760 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10944 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 51327536 0 0 0 0 0)
+  )
+  (comp 7516 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10900 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 77244540 0 0 0 0 0)
+  )
+  (comp 7444 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11020 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 73696540 0 0 0 0 0)
+  )
+  (comp 8656 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11356 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 54869544 0 0 0 0 0)
+  )
+  (comp 7708 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10872 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 54142988 0 0 0 0 0)
+  )
+  (comp 7396 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11588 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 78609440 0 0 0 0 0)
+  )
+  (comp 7480 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11528 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 82692172 0 0 0 0 0)
+  )
+  (comp 7528 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11780 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56245140 0 0 0 0 0)
+  )
+  (comp 7480 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11748 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 82708440 0 0 0 0 0)
+  )
+  (comp 7408 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11728 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56345552 0 0 0 0 0)
+  )
+  (comp 7380 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10956 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 82099884 0 0 0 0 0)
+  )
+  (comp 7552 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12136 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 82657692 0 0 0 0 0)
+  )
+  (comp 7828 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10764 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 52404716 0 0 0 0 0)
+  )
+  (comp 7456 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10776 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 76803624 0 0 0 0 0)
+  )
+  (comp 7476 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11008 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 78067940 0 0 0 0 0)
+  )
+  (comp 7392 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11272 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 47494976 0 0 0 0 0)
+  )
+  (comp 7648 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11160 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 54423068 0 0 0 0 0)
+  )
+  (comp 7468 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11200 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 82395748 0 0 0 0 0)
+  )
+  (comp 7488 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11588 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 80643400 0 0 0 0 0)
+  )
+  (comp 7332 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10872 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 50843288 0 0 0 0 0)
+  )
+  (comp 7704 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10604 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 75737216 0 0 0 0 0)
+  )
+  (comp 7464 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10668 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 47800552 0 0 0 0 0)
+  )
+  (comp 7528 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11052 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 82383316 0 0 0 0 0)
+  )
+  (comp 7732 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11700 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 79119848 0 0 0 0 0)
+  )
+  (comp 7676 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10932 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 48940936 0 0 0 0 0)
+  )
+  (comp 7308 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11040 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 75725740 0 0 0 0 0)
+  )
+  (comp 7528 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11444 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 76854456 0 0 0 0 0)
+  )
+  (comp 8000 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10956 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 47218464 0 0 0 0 0)
+  )
+  (comp 7396 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11020 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49594380 0 0 0 0 0)
+  )
+  (comp 7660 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10752 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 78068156 0 0 0 0 0)
+  )
+  (comp 7624 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10836 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 78647012 0 0 0 0 0)
+  )
+  (comp 7408 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11212 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 52995488 0 0 0 0 0)
+  )
+  (comp 7676 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10872 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 78931348 0 0 0 0 0)
+  )
+  (comp 7236 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11856 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 75100052 0 0 0 0 0)
+  )
+  (comp 7360 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11224 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 54470556 0 0 0 0 0)
+  )
+  (comp 7164 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11140 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 55409440 0 0 0 0 0)
+  )
+  (comp 7052 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10936 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 77226792 0 0 0 0 0)
+  )
+  (comp 7332 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11964 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 75619236 0 0 0 0 0)
+  )
+  (comp 8220 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11796 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49387792 0 0 0 0 0)
+  )
+  (comp 7768 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11456 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 52431512 0 0 0 0 0)
+  )
+  (comp 7672 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10824 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 79542196 0 0 0 0 0)
+  )
+  (comp 7588 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11076 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 80974252 0 0 0 0 0)
+  )
+  (comp 7724 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10852 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 52737388 0 0 0 0 0)
+  )
+  (comp 7432 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11064 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 80490116 0 0 0 0 0)
+  )
+  (comp 7416 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10836 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 80838992 0 0 0 0 0)
+  )
+  (comp 7612 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10960 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 52498568 0 0 0 0 0)
+  )
+  (comp 7308 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10888 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 50705380 0 0 0 0 0)
+  )
+  (comp 7356 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11152 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 77586768 0 0 0 0 0)
+  )
+  (comp 7588 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11128 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 79527980 0 0 0 0 0)
+  )
+  (comp 7432 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11028 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 52450680 0 0 0 0 0)
+  )
+  (comp 7336 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11100 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 52717388 0 0 0 0 0)
+  )
+  (comp 7588 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10520 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 75137068 0 0 0 0 0)
+  )
+  (comp 7392 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11372 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 79763028 0 0 0 0 0)
+  )
+  (comp 7332 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11312 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 52530596 0 0 0 0 0)
+  )
+  (comp 7528 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10920 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 79523980 0 0 0 0 0)
+  )
+  (comp 7636 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10728 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 77546380 0 0 0 0 0)
+  )
+  (comp 7684 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10776 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 50776144 0 0 0 0 0)
+  )
+  (comp 7600 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11468 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 50681540 0 0 0 0 0)
+  )
+  (comp 7576 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10800 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 79827340 0 0 0 0 0)
+  )
+  (comp 7432 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10788 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 76899512 0 0 0 0 0)
+  )
+  (comp 7564 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 59044 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 47499184 0 0 0 0 0)
+  )
+  (comp 8596 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11844 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 73982264 0 0 0 0 0)
+  )
+  (comp 7708 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11660 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 45462288 0 0 0 0 0)
+  )
+  (comp 7964 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11236 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68477852 0 0 0 0 0)
+  )
+  (comp 8120 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11056 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66770024 0 0 0 0 0)
+  )
+  (comp 8288 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11092 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 38484336 0 0 0 0 0)
+  )
+  (comp 7384 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10912 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 77508968 0 0 0 0 0)
+  )
+  (comp 7088 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12160 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 77474268 0 0 0 0 0)
+  )
+  (comp 7576 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10896 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49443852 0 0 0 0 0)
+  )
+  (comp 8048 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11588 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 80700932 0 0 0 0 0)
+  )
+  (comp 8048 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11140 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 53421160 0 0 0 0 0)
+  )
+  (comp 7500 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11044 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 76845336 0 0 0 0 0)
+  )
+  (comp 7456 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10568 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 75438532 0 0 0 0 0)
+  )
+  (comp 8448 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10664 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 46035776 0 0 0 0 0)
+  )
+  (comp 7284 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10508 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 70201472 0 0 0 0 0)
+  )
+  (comp 7464 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10532 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 75749328 0 0 0 0 0)
+  )
+  (comp 7368 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10512 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 47819756 0 0 0 0 0)
+  )
+  (comp 7772 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11236 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 52701384 0 0 0 0 0)
+  )
+  (comp 7684 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11600 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 79104248 0 0 0 0 0)
+  )
+  (comp 7684 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10776 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 77358544 0 0 0 0 0)
+  )
+  (comp 7356 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10508 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49261772 0 0 0 0 0)
+  )
+  (comp 7480 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10340 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 80608720 0 0 0 0 0)
+  )
+  (comp 7624 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10836 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 77740844 0 0 0 0 0)
+  )
+  (comp 7824 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11428 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 45444700 0 0 0 0 0)
+  )
+  (comp 7804 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10460 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 47506660 0 0 0 0 0)
+  )
+  (comp 7504 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10712 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 73703028 0 0 0 0 0)
+  )
+  (comp 7348 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10680 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 75543608 0 0 0 0 0)
+  )
+  (comp 7480 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10692 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49815208 0 0 0 0 0)
+  )
+  (comp 7540 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10952 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 75866556 0 0 0 0 0)
+  )
+  (comp 7344 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10920 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 76851540 0 0 0 0 0)
+  )
+  (comp 7260 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10740 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49260168 0 0 0 0 0)
+  )
+  (comp 7260 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10936 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 47521344 0 0 0 0 0)
+  )
+  (comp 7492 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11164 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 71943316 0 0 0 0 0)
+  )
+  (comp 7480 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11724 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 70452504 0 0 0 0 0)
+  )
+  (comp 7296 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10572 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49528196 0 0 0 0 0)
+  )
+  (comp 7516 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10884 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 75143276 0 0 0 0 0)
+  )
+  (comp 7492 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11428 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 74107240 0 0 0 0 0)
+  )
+  (comp 7360 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11004 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49243044 0 0 0 0 0)
+  )
+  (comp 7396 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10448 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 48966080 0 0 0 0 0)
+  )
+  (comp 7416 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11044 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 77188744 0 0 0 0 0)
+  )
+  (comp 7332 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10352 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 75970748 0 0 0 0 0)
+  )
+  (comp 7636 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10668 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 47134912 0 0 0 0 0)
+  )
+  (comp 7772 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10596 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 74026712 0 0 0 0 0)
+  )
+  (comp 7736 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10656 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 77443432 0 0 0 0 0)
+  )
+  (comp 7772 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10912 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49184768 0 0 0 0 0)
+  )
+  (comp 7284 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10800 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49227488 0 0 0 0 0)
+  )
+  (comp 7320 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10680 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 76226280 0 0 0 0 0)
+  )
+  (comp 7600 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11056 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 73374164 0 0 0 0 0)
+  )
+  (comp 8556 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10644 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 45729444 0 0 0 0 0)
+  )
+  (comp 7492 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10400 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 349101188 0 0 0 0 0)
+  )
+  (comp 8212 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11272 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 42314656 0 0 0 0 0)
+  )
+  (comp 7560 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10896 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66689792 0 0 0 0 0)
+  )
+  (comp 7372 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11020 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64983488 0 0 0 0 0)
+  )
+  (comp 7236 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10632 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 35248836 0 0 0 0 0)
+  )
+  (comp 7296 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10364 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 75123164 0 0 0 0 0)
+  )
+  (comp 7384 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11264 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 75100804 0 0 0 0 0)
+  )
+  (comp 7164 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10948 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 44300372 0 0 0 0 0)
+  )
+  (comp 7380 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10616 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68411924 0 0 0 0 0)
+  )
+  (comp 7152 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10484 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66682944 0 0 0 0 0)
+  )
+  (comp 7200 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10764 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40241576 0 0 0 0 0)
+  )
+  (comp 6980 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11260 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40233380 0 0 0 0 0)
+  )
+  (comp 7052 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10960 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 71948200 0 0 0 0 0)
+  )
+  (comp 7152 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10460 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 70644408 0 0 0 0 0)
+  )
+  (comp 7900 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10436 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 41972412 0 0 0 0 0)
+  )
+  (comp 7384 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11044 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66766336 0 0 0 0 0)
+  )
+  (comp 7188 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11448 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 77013400 0 0 0 0 0)
+  )
+  (comp 8292 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11964 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 43993256 0 0 0 0 0)
+  )
+  (comp 7672 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11516 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 42279924 0 0 0 0 0)
+  )
+  (comp 7540 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11404 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67620604 0 0 0 0 0)
+  )
+  (comp 7404 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11348 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64730132 0 0 0 0 0)
+  )
+  (comp 7332 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10860 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 47184580 0 0 0 0 0)
+  )
+  (comp 7188 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11272 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 78498916 0 0 0 0 0)
+  )
+  (comp 8036 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11080 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 80299688 0 0 0 0 0)
+  )
+  (comp 8096 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11672 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 47350656 0 0 0 0 0)
+  )
+  (comp 7648 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10740 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 45895420 0 0 0 0 0)
+  )
+  (comp 7236 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11088 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 70196380 0 0 0 0 0)
+  )
+  (comp 7612 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11032 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68799968 0 0 0 0 0)
+  )
+  (comp 7348 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10568 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 38719160 0 0 0 0 0)
+  )
+  (comp 7456 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10776 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64923092 0 0 0 0 0)
+  )
+  (comp 7128 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10764 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 42524264 0 0 0 0 0)
+  )
+  (comp 7380 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10640 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 70915120 0 0 0 0 0)
+  )
+  (comp 7356 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11392 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 73385316 0 0 0 0 0)
+  )
+  (comp 7300 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10704 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 71926896 0 0 0 0 0)
+  )
+  (comp 8048 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10944 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40516756 0 0 0 0 0)
+  )
+  (comp 7212 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10896 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 38717172 0 0 0 0 0)
+  )
+  (comp 7468 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10836 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 73447564 0 0 0 0 0)
+  )
+  (comp 7428 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11128 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 72618540 0 0 0 0 0)
+  )
+  (comp 7648 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10860 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 42601300 0 0 0 0 0)
+  )
+  (comp 7480 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10876 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68486352 0 0 0 0 0)
+  )
+  (comp 7332 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11200 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 74577700 0 0 0 0 0)
+  )
+  (comp 7176 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10752 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 45846428 0 0 0 0 0)
+  )
+  (comp 7248 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10920 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 45404780 0 0 0 0 0)
+  )
+  (comp 7360 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10508 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68743672 0 0 0 0 0)
+  )
+  (comp 7056 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10764 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67326244 0 0 0 0 0)
+  )
+  (comp 7272 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10568 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 42326900 0 0 0 0 0)
+  )
+  (comp 7284 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11212 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 42024108 0 0 0 0 0)
+  )
+  (comp 7052 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11140 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 72058468 0 0 0 0 0)
+  )
+  (comp 6896 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11128 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 70254000 0 0 0 0 0)
+  )
+  (comp 7224 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10700 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 45556348 0 0 0 0 0)
+  )
+  (comp 7112 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11224 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 72217324 0 0 0 0 0)
+  )
+  (comp 7248 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11092 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68436196 0 0 0 0 0)
+  )
+  (comp 7320 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10764 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 38535604 0 0 0 0 0)
+  )
+  (comp 7332 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10740 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40385108 0 0 0 0 0)
+  )
+  (comp 7388 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11016 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68515072 0 0 0 0 0)
+  )
+  (comp 7236 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10824 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68798124 0 0 0 0 0)
+  )
+  (comp 7200 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10656 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 36750364 0 0 0 0 0)
+  )
+  (comp 7056 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11624 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63019276 0 0 0 0 0)
+  )
+  (comp 7068 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11212 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 34952036 0 0 0 0 0)
+  )
+  (comp 6992 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10968 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66742860 0 0 0 0 0)
+  )
+  (comp 7064 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10936 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66997044 0 0 0 0 0)
+  )
+  (comp 7124 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10692 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 42235508 0 0 0 0 0)
+  )
+  (comp 7032 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11624 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 70090296 0 0 0 0 0)
+  )
+  (comp 7200 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11044 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66389236 0 0 0 0 0)
+  )
+  (comp 7092 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11260 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 38519460 0 0 0 0 0)
+  )
+  (comp 7080 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11600 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69351920 0 0 0 0 0)
+  )
+  (comp 7104 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11344 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 70164724 0 0 0 0 0)
+  )
+  (comp 6896 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11264 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 41986176 0 0 0 0 0)
+  )
+  (comp 7176 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11092 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66826948 0 0 0 0 0)
+  )
+  (comp 8472 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11084 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 70624104 0 0 0 0 0)
+  )
+  (comp 7044 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10728 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 41938440 0 0 0 0 0)
+  )
+  (comp 7252 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10640 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 43996428 0 0 0 0 0)
+  )
+  (comp 7224 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10616 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69901852 0 0 0 0 0)
+  )
+  (comp 6860 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11508 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 75331560 0 0 0 0 0)
+  )
+  (comp 7528 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11128 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 44055300 0 0 0 0 0)
+  )
+  (comp 7760 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11588 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66780740 0 0 0 0 0)
+  )
+  (comp 7772 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11420 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 37070848 0 0 0 0 0)
+  )
+  (comp 7528 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11044 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61135056 0 0 0 0 0)
+  )
+  (comp 7396 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11452 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69857628 0 0 0 0 0)
+  )
+  (comp 7344 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10532 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40178468 0 0 0 0 0)
+  )
+  (comp 7188 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10864 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66716464 0 0 0 0 0)
+  )
+  (comp 7516 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11004 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66631844 0 0 0 0 0)
+  )
+  (comp 7356 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11016 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40202604 0 0 0 0 0)
+  )
+  (comp 7164 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10860 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66734488 0 0 0 0 0)
+  )
+  (comp 7344 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11016 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 38770892 0 0 0 0 0)
+  )
+  (comp 7008 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10872 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64966376 0 0 0 0 0)
+  )
+  (comp 7384 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11188 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 70235660 0 0 0 0 0)
+  )
+  (comp 7152 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11164 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 42007396 0 0 0 0 0)
+  )
+  (comp 7224 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11224 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66402436 0 0 0 0 0)
+  )
+  (comp 7344 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11140 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66720640 0 0 0 0 0)
+  )
+  (comp 7032 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10948 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 38768920 0 0 0 0 0)
+  )
+  (comp 7092 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10680 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63166548 0 0 0 0 0)
+  )
+  (comp 7284 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10824 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66389756 0 0 0 0 0)
+  )
+  (comp 7200 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11164 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 44949504 0 0 0 0 0)
+  )
+  (comp 7200 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11468 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 41979092 0 0 0 0 0)
+  )
+  (comp 7092 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11076 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66794404 0 0 0 0 0)
+  )
+  (comp 7212 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11028 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69029832 0 0 0 0 0)
+  )
+  (comp 7312 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10908 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 38467180 0 0 0 0 0)
+  )
+  (comp 7248 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10764 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68629204 0 0 0 0 0)
+  )
+  (comp 7388 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10704 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68550516 0 0 0 0 0)
+  )
+  (comp 7176 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11020 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 39132168 0 0 0 0 0)
+  )
+  (comp 6896 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10800 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 41981488 0 0 0 0 0)
+  )
+  (comp 7068 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11324 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66413556 0 0 0 0 0)
+  )
+  (comp 7224 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10884 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64644796 0 0 0 0 0)
+  )
+  (comp 7916 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11224 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 42771324 0 0 0 0 0)
+  )
+  (comp 18716 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 23056 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68216524 0 0 0 0 0)
+  )
+  (comp 9440 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 13016 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69747512 0 0 0 0 0)
+  )
+  (comp 7792 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12268 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 36738280 0 0 0 0 0)
+  )
+  (comp 7648 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11892 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 41739496 0 0 0 0 0)
+  )
+  (comp 6956 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11464 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 73717036 0 0 0 0 0)
+  )
+  (comp 7600 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11820 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 71976988 0 0 0 0 0)
+  )
+  (comp 7636 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10860 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 41984320 0 0 0 0 0)
+  )
+  (comp 6972 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11332 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 72853136 0 0 0 0 0)
+  )
+  (comp 7140 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11212 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40579808 0 0 0 0 0)
+  )
+  (comp 7020 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12496 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67632572 0 0 0 0 0)
+  )
+  (comp 7744 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10304 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 70686316 0 0 0 0 0)
+  )
+  (comp 7260 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10472 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40269316 0 0 0 0 0)
+  )
+  (comp 7248 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10704 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67201956 0 0 0 0 0)
+  )
+  (comp 6896 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10744 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 71380864 0 0 0 0 0)
+  )
+  (comp 7044 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10968 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 41027980 0 0 0 0 0)
+  )
+  (comp 7032 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10764 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 42576356 0 0 0 0 0)
+  )
+  (comp 7360 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10740 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 70513888 0 0 0 0 0)
+  )
+  (comp 7424 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10664 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68869184 0 0 0 0 0)
+  )
+  (comp 7104 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10184 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 43625324 0 0 0 0 0)
+  )
+  (comp 7176 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10872 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 70450256 0 0 0 0 0)
+  )
+  (comp 7364 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10836 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69538552 0 0 0 0 0)
+  )
+  (comp 7272 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10824 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40632336 0 0 0 0 0)
+  )
+  (comp 7188 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10572 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 43286188 0 0 0 0 0)
+  )
+  (comp 6972 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10604 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69838884 0 0 0 0 0)
+  )
+  (comp 7348 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11636 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67049432 0 0 0 0 0)
+  )
+  (comp 7600 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11708 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 43815460 0 0 0 0 0)
+  )
+  (comp 6996 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10980 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69534688 0 0 0 0 0)
+  )
+  (comp 7016 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10860 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69794888 0 0 0 0 0)
+  )
+  (comp 7152 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10764 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40226976 0 0 0 0 0)
+  )
+  (comp 7296 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10788 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 43824720 0 0 0 0 0)
+  )
+  (comp 7344 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11052 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69733948 0 0 0 0 0)
+  )
+  (comp 6872 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11388 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69694812 0 0 0 0 0)
+  )
+  (comp 6668 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11128 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 41658080 0 0 0 0 0)
+  )
+  (comp 7392 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11624 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66109196 0 0 0 0 0)
+  )
+  (comp 8152 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11600 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 38375180 0 0 0 0 0)
+  )
+  (comp 7176 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11200 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66372980 0 0 0 0 0)
+  )
+  (comp 7188 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10824 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64783504 0 0 0 0 0)
+  )
+  (comp 7516 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11024 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 34281544 0 0 0 0 0)
+  )
+  (comp 7328 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10800 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66669828 0 0 0 0 0)
+  )
+  (comp 7100 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10668 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66782640 0 0 0 0 0)
+  )
+  (comp 7272 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10400 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40361188 0 0 0 0 0)
+  )
+  (comp 7420 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10776 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 38839364 0 0 0 0 0)
+  )
+  (comp 7140 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10692 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68075576 0 0 0 0 0)
+  )
+  (comp 7092 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10400 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67799540 0 0 0 0 0)
+  )
+  (comp 6992 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10448 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 41750960 0 0 0 0 0)
+  )
+  (comp 7380 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11224 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68430816 0 0 0 0 0)
+  )
+  (comp 7272 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11256 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68291584 0 0 0 0 0)
+  )
+  (comp 7272 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11152 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40554788 0 0 0 0 0)
+  )
+  (comp 7360 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10872 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69082488 0 0 0 0 0)
+  )
+  (comp 7312 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10244 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 42794936 0 0 0 0 0)
+  )
+  (comp 6824 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11432 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68560236 0 0 0 0 0)
+  )
+  (comp 6912 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11452 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69058348 0 0 0 0 0)
+  )
+  (comp 7152 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10952 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 38857376 0 0 0 0 0)
+  )
+  (comp 7332 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11356 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69190352 0 0 0 0 0)
+  )
+  (comp 6932 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10884 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64753436 0 0 0 0 0)
+  )
+  (comp 7124 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10872 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 39817736 0 0 0 0 0)
+  )
+  (comp 7368 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11176 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 41796912 0 0 0 0 0)
+  )
+  (comp 6932 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11844 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68214164 0 0 0 0 0)
+  )
+  (comp 7440 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10656 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69570244 0 0 0 0 0)
+  )
+  (comp 7200 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10680 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40135888 0 0 0 0 0)
+  )
+  (comp 7200 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10996 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 65077452 0 0 0 0 0)
+  )
+  (comp 7296 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10680 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63061260 0 0 0 0 0)
+  )
+  (comp 7296 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10944 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40889924 0 0 0 0 0)
+  )
+  (comp 7528 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11472 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 39796388 0 0 0 0 0)
+  )
+  (comp 7356 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10920 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67006020 0 0 0 0 0)
+  )
+  (comp 7308 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11152 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67226016 0 0 0 0 0)
+  )
+  (comp 7116 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11224 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40136756 0 0 0 0 0)
+  )
+  (comp 6952 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11716 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69752424 0 0 0 0 0)
+  )
+  (comp 6920 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11188 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66527412 0 0 0 0 0)
+  )
+  (comp 7740 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11540 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 34396048 0 0 0 0 0)
+  )
+  (comp 7364 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11152 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 35114008 0 0 0 0 0)
+  )
+  (comp 7436 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11388 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 58911760 0 0 0 0 0)
+  )
+  (comp 7048 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11448 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69010092 0 0 0 0 0)
+  )
+  (comp 7364 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11696 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40600944 0 0 0 0 0)
+  )
+  (comp 7368 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11348 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67924332 0 0 0 0 0)
+  )
+  (comp 7332 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11732 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 69154108 0 0 0 0 0)
+  )
+  (comp 7232 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 44660 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 39009480 0 0 0 0 0)
+  )
+  (comp 7000 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10528 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40085580 0 0 0 0 0)
+  )
+  (comp 7232 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10860 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68042040 0 0 0 0 0)
+  )
+  (comp 7376 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11248 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 68071780 0 0 0 0 0)
+  )
+  (comp 7376 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10952 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 39384208 0 0 0 0 0)
+  )
+  (comp 7356 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11296 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67007884 0 0 0 0 0)
+  )
+  (comp 7164 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11296 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 40547884 0 0 0 0 0)
+  )
+  (comp 7552 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11308 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67876060 0 0 0 0 0)
+  )
+  (comp 7128 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10812 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66192816 0 0 0 0 0)
+  )
+  (comp 7236 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11052 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 35286348 0 0 0 0 0)
+  )
+  (comp 7344 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10520 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66372508 0 0 0 0 0)
+  )
+  (comp 7164 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10736 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61183552 0 0 0 0 0)
+  )
+  (comp 6872 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10728 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 38485692 0 0 0 0 0)
+  )
+  (comp 6912 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10424 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67876576 0 0 0 0 0)
+  )
+  (comp 6996 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10448 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 38953240 0 0 0 0 0)
+  )
+  (comp 7576 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11056 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66411384 0 0 0 0 0)
+  )
+  (comp 7248 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10572 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64916936 0 0 0 0 0)
+  )
+  (comp 6980 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10532 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 33688468 0 0 0 0 0)
+  )
+  (comp 7600 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11396 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67727684 0 0 0 0 0)
+  )
+  (comp 7360 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11448 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 67143820 0 0 0 0 0)
+  )
+  (comp 6764 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10812 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 37025176 0 0 0 0 0)
+  )
+  (comp 7080 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12292 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 37256788 0 0 0 0 0)
+  )
+  (comp 6980 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10656 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64835104 0 0 0 0 0)
+  )
+  (comp 6800 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10800 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64531580 0 0 0 0 0)
+  )
+  (comp 7152 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10980 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 32511188 0 0 0 0 0)
+  )
+  (comp 7056 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11248 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 58916300 0 0 0 0 0)
+  )
+  (comp 7340 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10500 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 37733560 0 0 0 0 0)
+  )
+  (comp 7224 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11064 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 65593456 0 0 0 0 0)
+  )
+  (comp 7476 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 9940 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 60745008 0 0 0 0 0)
+  )
+  (comp 6812 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10340 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 31468528 0 0 0 0 0)
+  )
+  (comp 7312 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10884 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 59162424 0 0 0 0 0)
+  )
+  (comp 7468 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10908 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64596960 0 0 0 0 0)
+  )
+  (comp 7176 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10460 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 35668140 0 0 0 0 0)
+  )
+  (comp 7856 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10928 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 36932520 0 0 0 0 0)
+  )
+  (comp 7088 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 9988 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62762772 0 0 0 0 0)
+  )
+  (comp 7416 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10460 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 66592628 0 0 0 0 0)
+  )
+  (comp 7392 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11212 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 38458856 0 0 0 0 0)
+  )
+  (comp 6984 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11116 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63620784 0 0 0 0 0)
+  )
+  (comp 7796 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10060 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64544380 0 0 0 0 0)
+  )
+  (comp 7388 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10532 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 34842276 0 0 0 0 0)
+  )
+  (comp 6752 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10244 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 38411684 0 0 0 0 0)
+  )
+  (comp 7032 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10568 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64249512 0 0 0 0 0)
+  )
+  (comp 6884 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10448 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63757020 0 0 0 0 0)
+  )
+  (comp 7164 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10460 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 34477640 0 0 0 0 0)
+  )
+  (comp 6668 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10584 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63649384 0 0 0 0 0)
+  )
+  (comp 6752 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11176 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 36283132 0 0 0 0 0)
+  )
+  (comp 6960 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10400 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64323388 0 0 0 0 0)
+  )
+  (comp 7044 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10908 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62911400 0 0 0 0 0)
+  )
+  (comp 6972 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10176 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 36887712 0 0 0 0 0)
+  )
+  (comp 7036 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10228 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61474100 0 0 0 0 0)
+  )
+  (comp 6632 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10160 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64520060 0 0 0 0 0)
+  )
+  (comp 6920 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10632 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 37760376 0 0 0 0 0)
+  )
+  (comp 6728 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10800 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61181760 0 0 0 0 0)
+  )
+  (comp 6668 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10472 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 36589056 0 0 0 0 0)
+  )
+  (comp 7004 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10376 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64602972 0 0 0 0 0)
+  )
+  (comp 6812 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10800 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64813968 0 0 0 0 0)
+  )
+  (comp 6932 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10448 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 35366540 0 0 0 0 0)
+  )
+  (comp 6924 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10328 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62873420 0 0 0 0 0)
+  )
+  (comp 7304 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10908 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 65390472 0 0 0 0 0)
+  )
+  (comp 8608 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 13236 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 37371124 0 0 0 0 0)
+  )
+  (comp 7272 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10716 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 36510072 0 0 0 0 0)
+  )
+  (comp 7508 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11072 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 65332048 0 0 0 0 0)
+  )
+  (comp 7292 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10668 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62572872 0 0 0 0 0)
+  )
+  (comp 7888 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11104 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 33701444 0 0 0 0 0)
+  )
+  (comp 7200 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10352 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61799256 0 0 0 0 0)
+  )
+  (comp 7284 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10424 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 33403896 0 0 0 0 0)
+  )
+  (comp 7176 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10696 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61900164 0 0 0 0 0)
+  )
+  (comp 6944 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11380 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62825288 0 0 0 0 0)
+  )
+  (comp 6448 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10704 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 33210244 0 0 0 0 0)
+  )
+  (comp 6592 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10776 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62569352 0 0 0 0 0)
+  )
+  (comp 7092 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10304 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62945664 0 0 0 0 0)
+  )
+  (comp 7016 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10700 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 34150788 0 0 0 0 0)
+  )
+  (comp 7132 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10924 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 33267924 0 0 0 0 0)
+  )
+  (comp 7088 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10896 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 61337332 0 0 0 0 0)
+  )
+  (comp 7076 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10364 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 59439944 0 0 0 0 0)
+  )
+  (comp 6812 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10976 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 33710312 0 0 0 0 0)
+  )
+  (comp 6812 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11260 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 63690408 0 0 0 0 0)
+  )
+  (comp 6604 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11068 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62646232 0 0 0 0 0)
+  )
+  (comp 6688 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11016 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 30844592 0 0 0 0 0)
+  )
+  (comp 7140 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10388 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 28179972 0 0 0 0 0)
+  )
+  (comp 7236 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11448 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 55841420 0 0 0 0 0)
+  )
+  (comp 7200 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10776 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 60469124 0 0 0 0 0)
+  )
+  (comp 7152 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10608 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 35158052 0 0 0 0 0)
+  )
+  (comp 7048 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11496 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62234264 0 0 0 0 0)
+  )
+  (comp 6872 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10920 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 62570580 0 0 0 0 0)
+  )
+  (comp 6900 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10704 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 29764144 0 0 0 0 0)
+  )
+  (comp 7396 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10216 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 37315892 0 0 0 0 0)
+  )
+  (comp 17784 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 17684 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56941884 0 0 0 0 0)
+  )
+  (comp 9116 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11948 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 57410412 0 0 0 0 0)
+  )
+  (comp 8412 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10860 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 28735488 0 0 0 0 0)
+  )
+  (comp 7708 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 119900 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 34664148 0 0 0 0 0)
+  )
+  (comp 6968 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11164 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56641236 0 0 0 0 0)
+  )
+  (comp 8036 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10060 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 57866100 0 0 0 0 0)
+  )
+  (comp 7964 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11856 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 30526132 0 0 0 0 0)
+  )
+  (comp 8424 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12304 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 58858396 0 0 0 0 0)
+  )
+  (comp 7868 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11176 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 64953584 0 0 0 0 0)
+  )
+  (comp 8628 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10288 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 32102952 0 0 0 0 0)
+  )
+  (comp 8788 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10824 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 31464724 0 0 0 0 0)
+  )
+  (comp 7432 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10668 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 54990220 0 0 0 0 0)
+  )
+  (comp 7564 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11324 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56003876 0 0 0 0 0)
+  )
+  (comp 7020 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10680 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 23452128 0 0 0 0 0)
+  )
+  (comp 7104 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11044 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 54282996 0 0 0 0 0)
+  )
+  (comp 7092 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11624 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 27690896 0 0 0 0 0)
+  )
+  (comp 7636 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12000 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49417080 0 0 0 0 0)
+  )
+  (comp 7852 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10184 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 47595504 0 0 0 0 0)
+  )
+  (comp 7064 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10608 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 27087380 0 0 0 0 0)
+  )
+  (comp 7224 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10364 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 27555484 0 0 0 0 0)
+  )
+  (comp 7148 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10448 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 54893152 0 0 0 0 0)
+  )
+  (comp 7032 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 9684 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 51660116 0 0 0 0 0)
+  )
+  (comp 6908 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10288 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 25423292 0 0 0 0 0)
+  )
+  (comp 7044 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 9988 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 51707920 0 0 0 0 0)
+  )
+  (comp 7080 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10096 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 23881004 0 0 0 0 0)
+  )
+  (comp 6980 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10424 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 46351436 0 0 0 0 0)
+  )
+  (comp 7504 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10472 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 46257508 0 0 0 0 0)
+  )
+  (comp 7236 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10644 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 21311064 0 0 0 0 0)
+  )
+  (comp 7480 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11104 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 54528044 0 0 0 0 0)
+  )
+  (comp 7348 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10544 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 52801496 0 0 0 0 0)
+  )
+  (comp 7464 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11320 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 28011720 0 0 0 0 0)
+  )
+  (comp 7660 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11372 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 28028776 0 0 0 0 0)
+  )
+  (comp 7504 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11212 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 50743068 0 0 0 0 0)
+  )
+  (comp 7300 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10568 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49276880 0 0 0 0 0)
+  )
+  (comp 7236 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10472 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 21011016 0 0 0 0 0)
+  )
+  (comp 7660 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10180 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 45795840 0 0 0 0 0)
+  )
+  (comp 7916 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11564 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 57726984 0 0 0 0 0)
+  )
+  (comp 7372 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10256 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 27988052 0 0 0 0 0)
+  )
+  (comp 7684 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10664 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 28014724 0 0 0 0 0)
+  )
+  (comp 7380 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10644 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 52438216 0 0 0 0 0)
+  )
+  (comp 7684 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10616 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56289964 0 0 0 0 0)
+  )
+  (comp 7488 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10496 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 28616064 0 0 0 0 0)
+  )
+  (comp 7500 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11092 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56344748 0 0 0 0 0)
+  )
+  (comp 7648 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11064 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 29748176 0 0 0 0 0)
+  )
+  (comp 7624 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10896 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 57685432 0 0 0 0 0)
+  )
+  (comp 7648 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10728 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 55966012 0 0 0 0 0)
+  )
+  (comp 8536 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11188 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 26563072 0 0 0 0 0)
+  )
+  (comp 7516 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11088 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 55224580 0 0 0 0 0)
+  )
+  (comp 7480 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11260 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 54275320 0 0 0 0 0)
+  )
+  (comp 7564 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10812 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 28062108 0 0 0 0 0)
+  )
+  (comp 7552 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10944 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 55318224 0 0 0 0 0)
+  )
+  (comp 7860 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10908 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 26595412 0 0 0 0 0)
+  )
+  (comp 7296 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10704 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 55975716 0 0 0 0 0)
+  )
+  (comp 7300 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10848 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 54234692 0 0 0 0 0)
+  )
+  (comp 7452 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10872 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 26299576 0 0 0 0 0)
+  )
+  (comp 7224 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10484 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 52429916 0 0 0 0 0)
+  )
+  (comp 7164 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10788 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 48924972 0 0 0 0 0)
+  )
+  (comp 7356 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10524 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 21339064 0 0 0 0 0)
+  )
+  (comp 7104 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10860 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 21027108 0 0 0 0 0)
+  )
+  (comp 7564 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11020 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 43726380 0 0 0 0 0)
+  )
+  (comp 7516 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11336 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49142064 0 0 0 0 0)
+  )
+  (comp 7128 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10752 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 24535796 0 0 0 0 0)
+  )
+  (comp 7004 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10836 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 47205044 0 0 0 0 0)
+  )
+  (comp 7396 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10192 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 45457508 0 0 0 0 0)
+  )
+  (comp 7296 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11080 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 19464368 0 0 0 0 0)
+  )
+  (comp 7564 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11056 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 19303944 0 0 0 0 0)
+  )
+  (comp 7348 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11336 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 43737832 0 0 0 0 0)
+  )
+  (comp 7708 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11044 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 42314284 0 0 0 0 0)
+  )
+  (comp 7420 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10860 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 24853448 0 0 0 0 0)
+  )
+  (comp 7284 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10752 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 54786068 0 0 0 0 0)
+  )
+  (comp 7188 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11976 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 51220824 0 0 0 0 0)
+  )
+  (comp 7308 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10740 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 27653000 0 0 0 0 0)
+  )
+  (comp 7684 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12292 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 28359628 0 0 0 0 0)
+  )
+  (comp 8400 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11272 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 57955888 0 0 0 0 0)
+  )
+  (comp 7768 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11432 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 57953008 0 0 0 0 0)
+  )
+  (comp 7868 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10704 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 28082424 0 0 0 0 0)
+  )
+  (comp 7540 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11116 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 54252552 0 0 0 0 0)
+  )
+  (comp 7552 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10776 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 24301424 0 0 0 0 0)
+  )
+  (comp 7648 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11892 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 47364468 0 0 0 0 0)
+  )
+  (comp 7436 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10424 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 45212836 0 0 0 0 0)
+  )
+  (comp 7444 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11092 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 18106156 0 0 0 0 0)
+  )
+  (comp 8296 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10988 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 45196052 0 0 0 0 0)
+  )
+  (comp 7468 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11152 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 44566888 0 0 0 0 0)
+  )
+  (comp 7492 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10896 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 18147052 0 0 0 0 0)
+  )
+  (comp 7308 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11424 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 43367816 0 0 0 0 0)
+  )
+  (comp 7460 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10636 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 18121104 0 0 0 0 0)
+  )
+  (comp 7552 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11140 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 43482848 0 0 0 0 0)
+  )
+  (comp 7932 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11060 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 52473300 0 0 0 0 0)
+  )
+  (comp 7696 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10812 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 24054676 0 0 0 0 0)
+  )
+  (comp 15236 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 19504 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 46510164 0 0 0 0 0)
+  )
+  (comp 10640 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 13636 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 51150504 0 0 0 0 0)
+  )
+  (comp 8200 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12024 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 27219124 0 0 0 0 0)
+  )
+  (comp 8260 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 12412 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56091828 0 0 0 0 0)
+  )
+  (comp 8156 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11952 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 54278336 0 0 0 0 0)
+  )
+  (comp 7852 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 47224 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 26176184 0 0 0 0 0)
+  )
+  (comp 7684 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11696 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 28106744 0 0 0 0 0)
+  )
+  (comp 7736 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11708 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 55413300 0 0 0 0 0)
+  )
+  (comp 7744 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10764 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 54545864 0 0 0 0 0)
+  )
+  (comp 7524 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11072 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 27601148 0 0 0 0 0)
+  )
+  (comp 7576 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11636 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 56272004 0 0 0 0 0)
+  )
+  (comp 7564 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11904 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 27123904 0 0 0 0 0)
+  )
+  (comp 7484 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11940 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 54670528 0 0 0 0 0)
+  )
+  (comp 7140 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11176 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 55159144 0 0 0 0 0)
+  )
+  (comp 7468 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10884 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 25375236 0 0 0 0 0)
+  )
+  (comp 7460 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11120 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 52808400 0 0 0 0 0)
+  )
+  (comp 7400 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10652 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 51030228 0 0 0 0 0)
+  )
+  (comp 6960 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10932 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 24867676 0 0 0 0 0)
+  )
+  (comp 7128 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10424 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 51542396 0 0 0 0 0)
+  )
+  (comp 6872 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10716 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 53032944 0 0 0 0 0)
+  )
+  (comp 7260 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11176 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 25939112 0 0 0 0 0)
+  )
+  (comp 7164 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11212 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 25177556 0 0 0 0 0)
+  )
+  (comp 7144 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10944 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 50604184 0 0 0 0 0)
+  )
+  (comp 7236 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10860 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 50220368 0 0 0 0 0)
+  )
+  (comp 7288 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10532 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 24811856 0 0 0 0 0)
+  )
+  (comp 7188 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10812 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 51637836 0 0 0 0 0)
+  )
+  (comp 7044 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10680 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 25163328 0 0 0 0 0)
+  )
+  (comp 7856 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11636 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 53501232 0 0 0 0 0)
+  )
+  (comp 7200 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10932 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 51869688 0 0 0 0 0)
+  )
+  (comp 6956 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10436 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 22801724 0 0 0 0 0)
+  )
+  (comp 6956 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10412 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 50007376 0 0 0 0 0)
+  )
+  (comp 6996 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10544 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 46648476 0 0 0 0 0)
+  )
+  (comp 6692 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11080 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 19581328 0 0 0 0 0)
+  )
+  (comp 7056 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10872 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 48052448 0 0 0 0 0)
+  )
+  (comp 6936 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10656 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 24532412 0 0 0 0 0)
+  )
+  (comp 7260 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10860 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49537468 0 0 0 0 0)
+  )
+  (comp 7136 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10640 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 48873968 0 0 0 0 0)
+  )
+  (comp 7148 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10800 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 21259040 0 0 0 0 0)
+  )
+  (comp 7492 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10676 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 54260204 0 0 0 0 0)
+  )
+  (comp 7424 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10908 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 25292332 0 0 0 0 0)
+  )
+  (comp 7124 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11928 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 52304332 0 0 0 0 0)
+  )
+  (comp 7416 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11624 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49806436 0 0 0 0 0)
+  )
+  (comp 6872 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11472 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 23711648 0 0 0 0 0)
+  )
+  (comp 7328 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11112 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49580736 0 0 0 0 0)
+  )
+  (comp 7368 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11036 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49861804 0 0 0 0 0)
+  )
+  (comp 7404 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11692 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 23503716 0 0 0 0 0)
+  )
+  (comp 7492 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10520 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 25288100 0 0 0 0 0)
+  )
+  (comp 7568 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10884 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49945924 0 0 0 0 0)
+  )
+  (comp 7332 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10280 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 48750088 0 0 0 0 0)
+  )
+  (comp 7260 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10764 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 21038076 0 0 0 0 0)
+  )
+  (comp 7104 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10412 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 47556288 0 0 0 0 0)
+  )
+  (comp 7092 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10788 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 46888480 0 0 0 0 0)
+  )
+  (comp 7476 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10688 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 21056192 0 0 0 0 0)
+  )
+  (comp 7408 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10376 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 22770184 0 0 0 0 0)
+  )
+  (comp 7164 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10692 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 45498808 0 0 0 0 0)
+  )
+  (comp 7140 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 10788 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 49371772 0 0 0 0 0)
+  )
+  (comp 6824 0 0 0 0 0)
+)
+(para CG 1 1
+  (comp 11068 0 0 0 0 0)
+  (spawn CG_Iteration 1 1
+    (comp 21383140 0 0 0 0 0)
+  )
+  (comp 7272 0 0 0 0 0)
+)
+(comp 128847021542 0 0 0 0 0)
+
+[ End ]

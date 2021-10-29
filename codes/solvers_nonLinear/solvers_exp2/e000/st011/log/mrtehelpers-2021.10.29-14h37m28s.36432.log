@@ -1,0 +1,7 @@
+68 [47408485324544] INFO mrtehelpers.mrteenv <> - Product libs directory: /projects/scru5660/public/software/install/advisor_2020.2.0.606470/lib64
+68 [47408485324544] INFO mrtehelpers.mrteenv <> - File mask: advixe_tpssmrte_clrprof*
+80 [47408485324544] INFO mrtehelpers.mrteenv <> - File name: lib
+80 [47408485324544] INFO mrtehelpers.mrteenv <> - File mask: advixe_tpssmrte_clrprof*
+93 [47408485324544] INFO mrtehelpers.mrteenv <> - File name: lib
+93 [47408485324544] ERROR mrtehelpers.mrteenv <> - Failed to init shared librarylib located at /projects/scru5660/public/software/install/advisor_2020.2.0.606470/lib64, at file: vcs/mrtehelpers3/src/mrteenv/mrte_profiling_initializer.cpp:485
+93 [47408485324544] ERROR mrtehelpers.mrteenv <> - CLR support is disabled because profiler GUID is empty, at file: vcs/mrtehelpers3/src/mrteenv/mrte_profiling_initializer.cpp:308

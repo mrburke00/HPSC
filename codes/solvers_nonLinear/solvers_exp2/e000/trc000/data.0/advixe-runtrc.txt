@@ -1,0 +1,8 @@
+
+=== Start: [2021/10/29 14:25:04] === 
+Analysis started...
+Result file: /home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/trc000/trc000.advixe 
+Application exit code: 0 
+Result file: /home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/trc000/trc000.advixe 
+Analysis completed
+=== End: [2021/10/29 14:25:19] === 

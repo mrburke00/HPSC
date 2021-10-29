@@ -1,0 +1,90 @@
+Collection status has changed. 1
+Collection has been started.
+Collection has stopped. Application exit code:  0
+Finalizing results
+Finalizing the result
+Clearing the database
+The database has been cleared, elapsed time is 0.368 seconds.
+Loading raw data to the database
+Loading 'systemcollector-35947-shas0137.sc' file
+Loading '35947-35959.0.trace' file
+Loading '35959-35988.0.trace' file
+Loading '35959-35988.1.trace' file
+Loading '35988-36014.0.trace' file
+Loading '35988-36014.1.trace' file
+Loading '35988-36014.2.trace' file
+Loading 'userapicollector-35959-a1e08f91.trace' file
+Error: Cannot load data file `/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/hs017/data.1/.nfs00000001ca27e06f000036a6' ().
+Error: Cannot load data file `/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/hs017/data.1/.nfs00000001ca27e071000036b0' ().
+Error: Cannot load data file `/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/hs017/data.1/.nfs00000001ca68f961000036aa' ().
+Error: Cannot load data file `/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/hs017/data.1/.nfs00000001ca6dee61000036a7' ().
+Error: Cannot load data file `/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/hs017/data.1/.nfs00000001ca6dee67000036ae' ().
+Error: Cannot load data file `/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/hs017/data.1/.nfs00000001ca6dee69000036ac' ().
+Error: Cannot load data file `/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/hs017/data.1/.nfs00000001ca6dee6d000036af' ().
+Error: Cannot load data file `/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/hs017/data.1/.nfs00000001ca714b3e000036a9' ().
+Error: Cannot load data file `/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/hs017/data.1/.nfs00000001ca743eab000036ab' ().
+Error: Cannot load data file `/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/hs017/data.1/.nfs00000001ca743eb5000036a8' ().
+Error: Cannot load data file `/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/hs017/data.1/.nfs00000001ca743ebc000036a5' ().
+Error: Cannot load data file `/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/hs017/data.1/.nfs00000001ca743ebd000036ad' ().
+Error: Cannot load data file `/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/hs017/data.1/.nfs00000001ca76083b000036b1' ().
+Updating precomputed scalar metrics
+Raw data has been loaded to the database, elapsed time is 0.763 seconds.
+Processing profile metrics and debug information
+Data transformations have been finished, elapsed time is 0.000 seconds.
+Setting data model parameters
+Resolving module symbols
+Resolving information for dangling locations
+Resolving information for `ld-linux-x86-64.so.2'
+Resolving information for `libpthread.so.0'
+Resolving information for `libpsm2.so.2'
+Warning: Cannot locate debugging information for file `/lib64/ld-linux-x86-64.so.2'.
+Warning: Cannot locate debugging information for file `/lib64/libpthread.so.0'.
+Resolving information for `libdl.so.2'
+Warning: Cannot locate debugging information for file `/lib64/libpsm2.so.2'.
+Resolving information for `hydra_bstrap_proxy'
+Resolving information for `mpiexec.hydra'
+Warning: Cannot locate debugging information for file `/lib64/libdl.so.2'.
+Resolving information for `libfabric.so.1'
+Resolving information for `libiomp5.so'
+Resolving information for `libpin3dwarf.so'
+Resolving information for `libmpi.so.12'
+Warning: Cannot locate debugging information for file `/curc/sw/python/3.6.5/lib/libiomp5.so'.
+Resolving information for `hydra_pmi_proxy'
+Warning: Cannot locate debugging information for file `/curc/sw/python/3.6.5/lib/libmpi.so.12'.
+Resolving information for `libtpsstool.so'
+Warning: Cannot locate debugging information for file `/projects/scru5660/public/software/install/advisor_2020.2.0.606470/lib64/libtpsstool.so'.
+Resolving information for `libstdc++.so.6'
+Resolving information for `pinbin'
+Resolving information for `libpsmx2-fi.so'
+Resolving information for `libibverbs.so.1'
+Warning: Cannot locate debugging information for file `/lib64/libibverbs.so.1'.
+Resolving information for `solvers'
+Resolving information for `libverbs-fi.so'
+Resolving information for `libc.so.6'
+Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
+Resolving information for `libc-dynamic.so'
+Warning: Cannot locate file `[stack]'.
+Resolving information for `[stack]'
+Resolving bottom user stack information
+Resolving thread name information
+Resolving call target names for dynamic code
+Symbol resolution has been finished, elapsed time is 2.529 seconds.
+Processing profile metrics and debug information
+Deferred data transformations have been finished, elapsed time is 0.078 seconds.
+Setting data model parameters
+Data model parameters have been set, elapsed time is 0.044 seconds.
+Precomputing frequently used data
+Precomputing frequently used data
+Updating precomputed scalar metrics
+Precomputing frequently used data has been finished, elapsed time is 0.152 seconds.
+Discarding redundant overtime data
+Saving the result
+Redundant overtime data has been discarded, elapsed time is 0.007 seconds.
+Raw collector data has been discarded, elapsed time is 0.000 seconds.
+Finalizing the result took 4.078 seconds.
+Preparing data for display of survey call tree
+Resolving module symbols
+Resolving bottom user stack information
+Resolving thread name information
+Resolving call target names for dynamic code
+Precomputing frequently used data

@@ -1,0 +1,30 @@
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 1 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 1
+             y-direction: 1
+No. Cells in x-direction: 20
+             y-direction: 20
+Linear solver           : cg
+Non-Linear solver       : nr
+
+
+
+LINEAR SOLVE
+
+
+
+NON-LINEAR SOLVE
+
+Work took 1.817804 seconds
+nr converged in 325 iterations.

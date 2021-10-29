@@ -60,7 +60,8 @@ void Jacobi(VDD &Matrix , VD &RHS , VD &Solution , mpiInfo &myMPI )
     myMPI.PEsum( Diag_sumPE );
     
     // (4) Begin Iterations
-    
+    //ANNOTATE_SITE_BEGIN(Jacobi);
+    //ANNOTATE_TASK_BEGIN(Jacobi_iteration);    
     while ( global_converged == 0 && ++iter <= max_iter )
       {
 	// (4.1) Update each row
@@ -89,10 +90,11 @@ void Jacobi(VDD &Matrix , VD &RHS , VD &Solution , mpiInfo &myMPI )
       }
     
     // (5) Done - inform user
-
+    //ANNOTATE_TASK_END();
+    //ANNOTATE_SITE_END();
     if ( global_converged == 1 ) if ( myMPI.myPE == 0 ) cout << "  (o) Jacobi converged in " << iter << " iterations.\n" ;
     if ( global_converged == 0 ) if ( myMPI.myPE == 0 ) cout << "  (o) Jacobi failed to converge after " << iter << " iterations.\n" ;
-
+    
   }
 
 
@@ -199,7 +201,7 @@ void Residual(VDD &Matrix , VD &residual , VD &Sol , VD &RHS, mpiInfo &myMPI)
 
 void CG(VDD &Matrix , VD &RHS , VD &Solution , mpiInfo & myMPI)
 {
-
+  
   VD rnew; rnew.resize(nField + 1);
   VD r;       r.resize(nField + 1);
   VD p;       p.resize(nField + 1);
@@ -240,9 +242,9 @@ void CG(VDD &Matrix , VD &RHS , VD &Solution , mpiInfo & myMPI)
   rowLOOP p[row] = r[row];
 
   r_dot_r  = Dot(r,r,myMPI);         
-      
   // (4) CG Iterations
-
+  //ANNOTATE_SITE_BEGIN(CG);
+  //ANNOTATE_TASK_BEGIN(CG_Iteration);
   while ( global_converged == 0  && ++iter <= max_iter)
     {
       // (4.1) Compute alpha
@@ -291,9 +293,10 @@ void CG(VDD &Matrix , VD &RHS , VD &Solution , mpiInfo & myMPI)
     }
 
     // (5) Done - Inform user
-
-    if ( global_converged == 1 ) if ( myMPI.myPE == 0 ) cout << "  (o) CG converged in " << iter << " iterations.\n" ;
-    if ( global_converged == 0 ) if ( myMPI.myPE == 0 ) cout << "  (o) CG failed to converge after " << iter << " iterations.\n" ;
+    //ANNOTATE_TASK_END();
+    //ANNOTATE_SITE_END();
+    //if ( global_converged == 1 ) if ( myMPI.myPE == 0 ) cout << "  (o) CG converged in " << iter << " iterations.\n" ;
+    //if ( global_converged == 0 ) if ( myMPI.myPE == 0 ) cout << "  (o) CG failed to converge after " << iter << " iterations.\n" ;
 
 }
 

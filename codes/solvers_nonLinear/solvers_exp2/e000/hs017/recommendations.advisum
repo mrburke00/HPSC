@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename="/home/debu7497/HPSC/codes/solvers_nonLinear/src/LaplacianOnGrid.h"
+           line_no="153"
+           routine="LaplacianOnGrid::FormLS"
+           is_vectorized="1"
+           self_time="6.002476E-02"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="698"
+           priority="0">
+           <recommendation id="rec_serialized_user_function_try_simd_c" title="Vectorize serialized function(s) inside loop" confidence="3" gain="-1"/>
+  </hotspot>
+  <hotspot filename="/home/debu7497/HPSC/codes/solvers_nonLinear/src/LaplacianOnGrid.h"
+           line_no="153"
+           routine="LaplacianOnGrid::FormLS"
+           is_vectorized="1"
+           self_time="6.002476E-02"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="698"
+           priority="0">
+           <recommendation id="rec_fma_target_avx2_isa_c" title="Target the AVX2 ISA" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename="/home/debu7497/HPSC/codes/solvers_nonLinear/src/plotter.h"
+           line_no="54"
+           routine="LaplacianOnGrid::plot"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="631"
+           priority="0">
+           <recommendation id="rec_system_functions_move_c" title="Remove system function call(s) inside loop" confidence="1" gain="-1"/>
+  </hotspot>
+</IntelParallelAdvisorSummary >

@@ -148,10 +148,14 @@ int main(int argc, char *argv[])
      }
    
    // Nonlinear iterations
+
+   double start;
+   double end;
+   start = omp_get_wtime();
    
    while ( global_converged == 0 && ++iter < max_iter )
      {
-       if ( myMPI.myPE == 0 ) { printf("\n\n");   printf("-- %s -- Iteration %d\n",nlsolver.c_str(),iter); }
+       //if ( myMPI.myPE == 0 ) { printf("\n\n");   printf("-- %s -- Iteration %d\n",nlsolver.c_str(),iter); }
        
        MESH.FormLS(myMPI);
        
@@ -182,7 +186,8 @@ int main(int argc, char *argv[])
        MPI_Barrier(MPI_COMM_WORLD);   MPI_Allreduce(&converged, &global_converged, 1 , MPI_INT, MPI_MIN, MPI_COMM_WORLD);
        
      }
-   
+    end = omp_get_wtime();
+    printf("Work took %f seconds\n", end - start);   
    if ( global_converged == 1 ) if ( myMPI.myPE == 0 ) cout << nlsolver << " converged in " << iter << " iterations.\n" ;
    if ( global_converged == 0 ) if ( myMPI.myPE == 0 ) cout << nlsolver << " failed to converge after " << iter << " iterations.\n" ;
     

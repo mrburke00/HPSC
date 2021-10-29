@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<log version="1.0" tool="runtool">
+
+<msg id="1" tool="runtool">
+  <type>log-start</type>
+  <arg>2021/10/29 14:25:04</arg>
+</msg>
+<msg id="2" tool="runtool">
+  <type>collector-starts</type>
+</msg>
+<msg id="3" tool="runtool">
+  <type>marker-file</type>
+  <arg>/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/trc000/trc000.advixe</arg>
+</msg>
+<msg id="4" tool="trc">
+  <type>PROCESS_START</type>
+  <arg>/home/debu7497/HPSC/codes/solvers_nonLinear/src/solvers</arg>
+  <arg>28645</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="5" tool="trc">
+  <type>PROCESS_ANALYSIS_MODE</type>
+  <arg>full</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="6" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/home/debu7497/HPSC/codes/solvers_nonLinear/src/solvers</arg>
+  <arg>0x400000</arg>
+  <arg>0x61db77</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="7" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/ld-linux-x86-64.so.2</arg>
+  <arg>0x2b8073998000</arg>
+  <arg>0x2b8073bbb14f</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="8" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>[vdso]</arg>
+  <arg>0x7fff9b7f6000</arg>
+  <arg>0x7fff9b7f6e6c</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="9" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libdl.so.2</arg>
+  <arg>0x2b8089296000</arg>
+  <arg>0x2b808949912f</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="10" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/curc/sw/python/3.6.5/lib/libmpifort.so.12</arg>
+  <arg>0x2b80894b7000</arg>
+  <arg>0x2b8089862ab7</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="11" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/curc/sw/python/3.6.5/lib/libmpi.so.12</arg>
+  <arg>0x2b808989d000</arg>
+  <arg>0x2b808b0bbf57</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="12" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/librt.so.1</arg>
+  <arg>0x2b808b0bc000</arg>
+  <arg>0x2b808b2c3c37</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="13" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libpthread.so.0</arg>
+  <arg>0x2b808b2c4000</arg>
+  <arg>0x2b808b4df487</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="14" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/curc/sw/gcc/5.4.0/lib64/libstdc++.so.6</arg>
+  <arg>0x2b808b4e0000</arg>
+  <arg>0x2b808b85a4bf</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="15" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libm.so.6</arg>
+  <arg>0x2b808b85b000</arg>
+  <arg>0x2b808bb5c137</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="16" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/curc/sw/python/3.6.5/lib/libiomp5.so</arg>
+  <arg>0x2b808bb5d000</arg>
+  <arg>0x2b808bf3f6bf</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="17" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/curc/sw/gcc/5.4.0/lib64/libgcc_s.so.1</arg>
+  <arg>0x2b808bf40000</arg>
+  <arg>0x2b808c15643f</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="18" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libc.so.6</arg>
+  <arg>0x2b808c157000</arg>
+  <arg>0x2b808c5191bf</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="19" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libfabric.so.1</arg>
+  <arg>0x2b808c534000</arg>
+  <arg>0x2b808c86c837</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="20" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/librdmacm.so.1</arg>
+  <arg>0x2b808c86d000</arg>
+  <arg>0x2b808ca83247</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="21" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libibverbs.so.1</arg>
+  <arg>0x2b808ca8e000</arg>
+  <arg>0x2b808cca462f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="22" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libnl-route-3.so.200</arg>
+  <arg>0x2b808cca5000</arg>
+  <arg>0x2b808cf1159f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="23" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libpsm_infinipath.so.1</arg>
+  <arg>0x2b808cf12000</arg>
+  <arg>0x2b808d167d77</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="24" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libpsm2.so.2</arg>
+  <arg>0x2b808d168000</arg>
+  <arg>0x2b808d3fb2cf</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="25" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libnl-3.so.200</arg>
+  <arg>0x2b808d3fc000</arg>
+  <arg>0x2b808d61c8c7</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="26" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libinfinipath.so.4</arg>
+  <arg>0x2b808d61d000</arg>
+  <arg>0x2b808d82be7f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="27" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libuuid.so.1</arg>
+  <arg>0x2b808d82c000</arg>
+  <arg>0x2b808da3017f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="28" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libnuma.so.1</arg>
+  <arg>0x2b808da31000</arg>
+  <arg>0x2b808dc3c8e7</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:04 2021</timestamp>
+</msg>
+<msg id="29" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libfabric/libverbs-fi.so</arg>
+  <arg>0x2b8091dee000</arg>
+  <arg>0x2b80920592cf</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="30" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libibverbs/libvmw_pvrdma-rdmav17.so</arg>
+  <arg>0x2b8092b3e000</arg>
+  <arg>0x2b8092d4315f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="31" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libibverbs/libhns-rdmav17.so</arg>
+  <arg>0x2b8093102000</arg>
+  <arg>0x2b80933091df</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="32" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libibverbs/libbnxt_re-rdmav17.so</arg>
+  <arg>0x2b809330a000</arg>
+  <arg>0x2b809350f14f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="33" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libibverbs/librxe-rdmav17.so</arg>
+  <arg>0x2b8093510000</arg>
+  <arg>0x2b809371415f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="34" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libibverbs/libqedr-rdmav17.so</arg>
+  <arg>0x2b8093715000</arg>
+  <arg>0x2b809391d16f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="35" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libibverbs/libocrdma-rdmav17.so</arg>
+  <arg>0x2b809391e000</arg>
+  <arg>0x2b8093b2416f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="36" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libibverbs/libnes-rdmav17.so</arg>
+  <arg>0x2b8093b25000</arg>
+  <arg>0x2b8093d2b157</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="37" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libibverbs/libmthca-rdmav17.so</arg>
+  <arg>0x2b8093d2c000</arg>
+  <arg>0x2b8093f3416f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="38" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libibverbs/libmlx5-rdmav17.so</arg>
+  <arg>0x2b8093f35000</arg>
+  <arg>0x2b809415733f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="39" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libibverbs/libmlx4-rdmav17.so</arg>
+  <arg>0x2b8094158000</arg>
+  <arg>0x2b809436322f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="40" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libibverbs/libipathverbs-rdmav17.so</arg>
+  <arg>0x2b8094364000</arg>
+  <arg>0x2b809456813f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="41" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libibverbs/libi40iw-rdmav17.so</arg>
+  <arg>0x2b8094569000</arg>
+  <arg>0x2b8094770127</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="42" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libibverbs/libhfi1verbs-rdmav17.so</arg>
+  <arg>0x2b8094771000</arg>
+  <arg>0x2b809497513f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="43" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libibverbs/libcxgb4-rdmav17.so</arg>
+  <arg>0x2b8094976000</arg>
+  <arg>0x2b8094b7e1a7</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="44" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libibverbs/libcxgb3-rdmav17.so</arg>
+  <arg>0x2b8094b7f000</arg>
+  <arg>0x2b8094d84167</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="45" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libfabric/libpsmx2-fi.so</arg>
+  <arg>0x2b8094d85000</arg>
+  <arg>0x2b8094fe2ca7</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="46" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/libfabric/libpsmx-fi.so</arg>
+  <arg>0x2b8094fe3000</arg>
+  <arg>0x2b8095230adf</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:07 2021</timestamp>
+</msg>
+<msg id="47" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libnss_files.so.2</arg>
+  <arg>0x2b809592d000</arg>
+  <arg>0x2b8095b3f877</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:08 2021</timestamp>
+</msg>
+<msg id="48" tool="trc">
+  <type>PROCESS_START</type>
+  <arg>/curc/sw/python/3.6.5/bin/hydra_pmi_proxy</arg>
+  <arg>28840</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="49" tool="trc">
+  <type>PROCESS_ANALYSIS_MODE</type>
+  <arg>full</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="50" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/curc/sw/python/3.6.5/bin/hydra_pmi_proxy</arg>
+  <arg>0x400000</arg>
+  <arg>0x6878a7</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="51" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/ld-linux-x86-64.so.2</arg>
+  <arg>0x2b4d4a649000</arg>
+  <arg>0x2b4d4a86c14f</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="52" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>[vdso]</arg>
+  <arg>0x2b4d4a66a000</arg>
+  <arg>0x2b4d4a66ae6c</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="53" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libdl.so.2</arg>
+  <arg>0x2b4d60081000</arg>
+  <arg>0x2b4d6028412f</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:11 2021</timestamp>
+</msg>
+<msg id="54" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libpthread.so.0</arg>
+  <arg>0x2b4d602a0000</arg>
+  <arg>0x2b4d604bb487</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:11 2021</timestamp>
+</msg>
+<msg id="55" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libm.so.6</arg>
+  <arg>0x2b4d604bc000</arg>
+  <arg>0x2b4d607bd137</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:11 2021</timestamp>
+</msg>
+<msg id="56" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/curc/sw/gcc/5.4.0/lib64/libgcc_s.so.1</arg>
+  <arg>0x2b4d607bf000</arg>
+  <arg>0x2b4d609d543f</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:11 2021</timestamp>
+</msg>
+<msg id="57" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libc.so.6</arg>
+  <arg>0x2b4d609e2000</arg>
+  <arg>0x2b4d60da41bf</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:11 2021</timestamp>
+</msg>
+<msg id="58" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libnss_files.so.2</arg>
+  <arg>0x2b4d6170f000</arg>
+  <arg>0x2b4d61921877</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:11 2021</timestamp>
+</msg>
+<msg id="59" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/curc/sw/python/3.6.5/bin/hydra_pmi_proxy</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:14 2021</timestamp>
+</msg>
+<msg id="60" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/ld-linux-x86-64.so.2</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:14 2021</timestamp>
+</msg>
+<msg id="61" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>[vdso]</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:14 2021</timestamp>
+</msg>
+<msg id="62" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libdl.so.2</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:14 2021</timestamp>
+</msg>
+<msg id="63" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libpthread.so.0</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:14 2021</timestamp>
+</msg>
+<msg id="64" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libm.so.6</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:14 2021</timestamp>
+</msg>
+<msg id="65" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/curc/sw/gcc/5.4.0/lib64/libgcc_s.so.1</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:14 2021</timestamp>
+</msg>
+<msg id="66" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libc.so.6</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:14 2021</timestamp>
+</msg>
+<msg id="67" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libnss_files.so.2</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:14 2021</timestamp>
+</msg>
+<msg id="68" tool="trc">
+  <type>PROCESS_FINISH</type>
+  <arg>/curc/sw/python/3.6.5/bin/hydra_pmi_proxy</arg>
+  <arg>28840</arg>
+  <arg>0x0</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:14 2021</timestamp>
+</msg>
+<msg id="69" tool="trc">
+  <type>PROCESS_START</type>
+  <arg>/curc/sw/python/3.6.5/bin/hydra_bstrap_proxy</arg>
+  <arg>28840</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="70" tool="trc">
+  <type>PROCESS_ANALYSIS_MODE</type>
+  <arg>full</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="71" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/curc/sw/python/3.6.5/bin/hydra_bstrap_proxy</arg>
+  <arg>0x400000</arg>
+  <arg>0x6748c7</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="72" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/ld-linux-x86-64.so.2</arg>
+  <arg>0x2b5049225000</arg>
+  <arg>0x2b504944814f</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="73" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>[vdso]</arg>
+  <arg>0x7ffd7a950000</arg>
+  <arg>0x7ffd7a950e6c</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="74" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libdl.so.2</arg>
+  <arg>0x2b505ec49000</arg>
+  <arg>0x2b505ee4c12f</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="75" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libpthread.so.0</arg>
+  <arg>0x2b505ee68000</arg>
+  <arg>0x2b505f083487</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="76" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libm.so.6</arg>
+  <arg>0x2b505f084000</arg>
+  <arg>0x2b505f385137</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="77" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/curc/sw/gcc/5.4.0/lib64/libgcc_s.so.1</arg>
+  <arg>0x2b505f38b000</arg>
+  <arg>0x2b505f5a143f</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="78" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libc.so.6</arg>
+  <arg>0x2b505f5aa000</arg>
+  <arg>0x2b505f96c1bf</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="79" tool="trc">
+  <type>PROCESS_START</type>
+  <arg>/curc/sw/python/3.6.5/bin/mpiexec.hydra</arg>
+  <arg>28755</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:09 2021</timestamp>
+</msg>
+<msg id="80" tool="trc">
+  <type>PROCESS_ANALYSIS_MODE</type>
+  <arg>full</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:09 2021</timestamp>
+</msg>
+<msg id="81" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/curc/sw/python/3.6.5/bin/mpiexec.hydra</arg>
+  <arg>0x400000</arg>
+  <arg>0x6a8a57</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:09 2021</timestamp>
+</msg>
+<msg id="82" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/ld-linux-x86-64.so.2</arg>
+  <arg>0x2b0db96c3000</arg>
+  <arg>0x2b0db98e614f</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:09 2021</timestamp>
+</msg>
+<msg id="83" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>[vdso]</arg>
+  <arg>0x7ffd197a2000</arg>
+  <arg>0x7ffd197a2e6c</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:09 2021</timestamp>
+</msg>
+<msg id="84" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libdl.so.2</arg>
+  <arg>0x2b0dcf17e000</arg>
+  <arg>0x2b0dcf38112f</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:09 2021</timestamp>
+</msg>
+<msg id="85" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libpthread.so.0</arg>
+  <arg>0x2b0dcf3a1000</arg>
+  <arg>0x2b0dcf5bc487</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:09 2021</timestamp>
+</msg>
+<msg id="86" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libm.so.6</arg>
+  <arg>0x2b0dcf5bd000</arg>
+  <arg>0x2b0dcf8be137</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:09 2021</timestamp>
+</msg>
+<msg id="87" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/curc/sw/gcc/5.4.0/lib64/libgcc_s.so.1</arg>
+  <arg>0x2b0dcf8bf000</arg>
+  <arg>0x2b0dcfad543f</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:09 2021</timestamp>
+</msg>
+<msg id="88" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libc.so.6</arg>
+  <arg>0x2b0dcfae1000</arg>
+  <arg>0x2b0dcfea31bf</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:09 2021</timestamp>
+</msg>
+<msg id="89" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libnss_files.so.2</arg>
+  <arg>0x2b0dd08fe000</arg>
+  <arg>0x2b0dd0b10877</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="90" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libnss_dns.so.2</arg>
+  <arg>0x2b0dd0c2a000</arg>
+  <arg>0x2b0dd0e2f0ff</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="91" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libresolv.so.2</arg>
+  <arg>0x2b0dd0e40000</arg>
+  <arg>0x2b0dd1059a97</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Fri Oct 29 14:25:10 2021</timestamp>
+</msg>
+<msg id="92" tool="runtool">
+  <type>app-exit-code</type>
+  <arg>0</arg>
+</msg>
+<msg id="93" tool="runtool">
+  <type>marker-file</type>
+  <arg>/home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2/e000/trc000/trc000.advixe</arg>
+</msg>
+<msg id="94" tool="runtool">
+  <type>collector-done</type>
+</msg>
+<msg id="95" tool="runtool">
+  <type>log-end</type>
+  <arg>2021/10/29 14:25:19</arg>
+</msg>
+
+</log>
+

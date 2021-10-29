@@ -1,0 +1,1 @@
+/projects/scru5660/public/software/install/advisor_2020.2.0.606470/bin64/advixe-cl -collect suitability -mrte-mode=auto -interval=10 -data-limit=500 -project-dir /home/debu7497/HPSC/codes/solvers_nonLinear/solvers_exp2 -- /home/debu7497/HPSC/codes/solvers_nonLinear/src/solvers ./solvers -nPEx 1 -nPEy 1 -nCellx 30 -nCelly 30 -solver cg -nl nr
