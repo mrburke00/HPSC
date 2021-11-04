@@ -290,27 +290,30 @@ public:
   //  ||
   //  ==
 
-  int NR_Phi_Update( double tolerance , double relax)
+  int NR_Phi_Update( double tolerance , double relax, int converged)
   {
-   int converged = 1;
-   int numTH = 2;
-   omp_set_num_threads(numTH);
-#pragma omp parallel	
-{
+     //int converged = 1; 
      #pragma omp for
      rLOOP 
       {
 	phi[r] = phi[r]*relax + (1.-relax)*( phi[r] + dPhi[r] );
-	//if ( fabs( dPhi[r] ) > tolerance ) converged = 0;
+	if ( fabs( dPhi[r] ) > tolerance ) converged = 0;
       }
+      /*
      #pragma omp barrier
      #pragma omp single
+     {
+     int converged = 1;
      rLOOP
 	{
 		if ( fabs( dPhi[r] ) > tolerance ) converged = 0;
 	}
-}
+	printf("myTH: %d   converged: %d \n", omp_get_thread_num(), converged);
+     }
+    #pragma omp barrier
+    */
     return converged;
+    
   }
 
   int SA_Phi_Update( double tolerance , double relax)

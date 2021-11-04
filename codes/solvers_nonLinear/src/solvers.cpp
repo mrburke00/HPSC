@@ -45,6 +45,7 @@ int main(int argc, char *argv[])
    int nPEx, nPEy, nCellx, nCelly;
    string   solver;
    string nlsolver;
+   int numThreads;
    double relax = 0.3;
    
    if ( myMPI.myPE == 0 )
@@ -75,7 +76,8 @@ int main(int argc, char *argv[])
        if ( !strcmp(argv[count],"-solver"  ) ) solver =      argv[count+1] ;
        if ( !strcmp(argv[count],"-nl"      ) ) nlsolver =      argv[count+1] ;
        if ( !strcmp(argv[count],"-r"       ) ) relax    = atof(argv[count+1]) ;
-     }
+     if ( !strcmp(argv[count],"-numTH"	   ) ) numThreads    = atof(argv[count+1]) ; 
+    }
 
    if ( myMPI.myPE == 0 )
      {
@@ -152,9 +154,15 @@ int main(int argc, char *argv[])
    double start;
    double end;
    start = omp_get_wtime();
-
+int numTH = numThreads;
+int numConverged = numThreads;
+omp_set_num_threads(numTH);
+printf("numThreads: %d \n", numThreads);
+printf("numTH: %d \n", numTH);
+//printf("get_num_threads: %d \n", omp_get_num_threads());
    while ( global_converged == 0 && ++iter < max_iter )
      {
+       //printf("iters: %d \n", iter);
        //if ( myMPI.myPE == 0 ) { printf("\n\n");   printf("-- %s -- Iteration %d\n",nlsolver.c_str(),iter); }
        
        MESH.FormLS(myMPI);
@@ -166,11 +174,19 @@ int main(int argc, char *argv[])
 	   if      ( solver == "jacobi" ) MESH.Jacobi(MESH.Jacobian , MESH.f , MESH.dPhi  , myMPI );
 	   else if ( solver == "cg"     ) MESH.CG    (MESH.Jacobian , MESH.f , MESH.dPhi  , myMPI );
 	   else                           FatalError("Solver " + solver + " not found.");
-
-	converged = MESH.NR_Phi_Update( tol , relax );
-	
-        printf("CONVERGED: %d \n", converged);
-       }
+	//int numConverged = omp_get_num_threads();
+	#pragma omp parallel shared(numConverged)
+	{
+        int numConverged = omp_get_num_threads();
+        //printf("get_num_threads: %d \n", omp_get_num_threads());
+	//printf("numConverged: %d \n", numConverged);
+	numConverged = MESH.NR_Phi_Update( tol , relax, numConverged );
+ 	//printf("NUMCONVERGED: %d \n", numConverged);
+	if (numConverged == omp_get_num_threads()) converged = 1;
+	if (numConverged == 0) converged = 0;
+	}
+	//printf("CONVERGED: %d \n", converged);
+	}
 	else if ( nlsolver == "sa" ) 
 	{
 	   
@@ -183,13 +199,12 @@ int main(int argc, char *argv[])
        
        else
 	 FatalError("Nonlinear Solver " + nlsolver + " not found.");
-
        MPI_Barrier(MPI_COMM_WORLD);   MPI_Allreduce(&converged, &global_converged, 1 , MPI_INT, MPI_MIN, MPI_COMM_WORLD);
-       
      }
-
     end = omp_get_wtime();
-    printf("Work took %f seconds\n", end - start);   
+
+   printf("Work took %f seconds\n", end - start);   
+
    if ( global_converged == 1 ) if ( myMPI.myPE == 0 ) cout << nlsolver << " converged in " << iter << " iterations.\n" ;
    if ( global_converged == 0 ) if ( myMPI.myPE == 0 ) cout << nlsolver << " failed to converge after " << iter << " iterations.\n" ;
     
