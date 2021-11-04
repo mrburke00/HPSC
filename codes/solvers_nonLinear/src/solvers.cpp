@@ -135,7 +135,7 @@ int main(int argc, char *argv[])
 
    double tol              = 1.e-08;
    int    iter             = 0;
-   int    max_iter         = 1000;
+   int    max_iter         = 5000;
    int    converged        = 0;
    int    global_converged = 0;
 
@@ -152,7 +152,7 @@ int main(int argc, char *argv[])
    double start;
    double end;
    start = omp_get_wtime();
-   
+
    while ( global_converged == 0 && ++iter < max_iter )
      {
        //if ( myMPI.myPE == 0 ) { printf("\n\n");   printf("-- %s -- Iteration %d\n",nlsolver.c_str(),iter); }
@@ -162,23 +162,24 @@ int main(int argc, char *argv[])
 
        if ( nlsolver == "nr" )  
 	 {
-	   
+	  
 	   if      ( solver == "jacobi" ) MESH.Jacobi(MESH.Jacobian , MESH.f , MESH.dPhi  , myMPI );
 	   else if ( solver == "cg"     ) MESH.CG    (MESH.Jacobian , MESH.f , MESH.dPhi  , myMPI );
 	   else                           FatalError("Solver " + solver + " not found.");
 
-	   converged = MESH.NR_Phi_Update( tol , relax );
-	 }
-       
-       else if ( nlsolver == "sa" ) 
-	 {
+	converged = MESH.NR_Phi_Update( tol , relax );
+	
+        printf("CONVERGED: %d \n", converged);
+       }
+	else if ( nlsolver == "sa" ) 
+	{
 	   
 	   if      ( solver == "jacobi" ) MESH.Jacobi(MESH.Acoef , MESH.b , MESH.phiNew , myMPI );
 	   else if ( solver == "cg"     ) MESH.CG    (MESH.Acoef , MESH.b , MESH.phiNew , myMPI );	   
 	   else                           FatalError("Solver " + solver + " not found.");
-
-	   converged = MESH.SA_Phi_Update ( tol , relax );
-	 }
+	   
+ 		converged = MESH.SA_Phi_Update ( tol , relax );
+        } 
        
        else
 	 FatalError("Nonlinear Solver " + nlsolver + " not found.");
@@ -186,6 +187,7 @@ int main(int argc, char *argv[])
        MPI_Barrier(MPI_COMM_WORLD);   MPI_Allreduce(&converged, &global_converged, 1 , MPI_INT, MPI_MIN, MPI_COMM_WORLD);
        
      }
+
     end = omp_get_wtime();
     printf("Work took %f seconds\n", end - start);   
    if ( global_converged == 1 ) if ( myMPI.myPE == 0 ) cout << nlsolver << " converged in " << iter << " iterations.\n" ;
