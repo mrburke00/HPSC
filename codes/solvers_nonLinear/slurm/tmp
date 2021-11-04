@@ -13,8 +13,8 @@ Input Summary:
 --------------------------- 
 No. PE   in  x-direction: 1
              y-direction: 1
-No. Cells in x-direction: 20
-             y-direction: 20
+No. Cells in x-direction: 10
+             y-direction: 10
 Linear solver           : cg
 Non-Linear solver       : nr
 
@@ -26,7 +26,7 @@ LINEAR SOLVE
 
 NON-LINEAR SOLVE
 
-numThreads: 1 
-numTH: 1 
-Work took 2.965234 seconds
-nr converged in 642 iterations.
+numThreads: 8 
+numTH: 8 
+Work took 0.114676 seconds
+nr converged in 128 iterations.
