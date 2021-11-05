@@ -1,0 +1,37 @@
+==
+||
+|| Begin Execution of fd in slurm batch script.
+||
+==
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 16 processors 
+
+------------------------------------------------------
+
+CG converged in Work took 0.033453 seconds
+Work took 0.033051 seconds
+Work took 0.033159 seconds
+Work took 0.033532 seconds
+Work took 0.033837 seconds
+Work took 0.033537 seconds
+Work took 0.033437 seconds
+Work took 0.032783 seconds
+Work took 0.033163 seconds
+Work took 0.033150 seconds
+Work took 0.033834 seconds
+Work took 0.033152 seconds
+Work took 0.033441 seconds
+Work took 0.033062 seconds
+Work took 0.033455 seconds
+319 iterations.
+Work took 0.032258 seconds
+==
+||
+|| Execution of fd in slurm batch script complete.
+||
+==

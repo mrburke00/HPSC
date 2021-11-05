@@ -1,0 +1,51 @@
+==
+||
+|| Begin Execution of fd in slurm batch script.
+||
+==
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 4 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 2
+             y-direction: 2
+No. Cells in x-direction: 20
+             y-direction: 20
+Linear solver           : cg
+Non-Linear solver       : nr
+
+
+
+LINEAR SOLVE
+
+numThreads: 2 
+numTH: 2 
+
+
+NON-LINEAR SOLVE
+
+numThreads: 2 
+numTH: 2 
+numThreads: 2 
+numTH: 2 
+numThreads: 2 
+numTH: 2 
+Work took 7.563785 seconds
+nr converged in 1765 iterations.
+Work took 7.562549 seconds
+Work took 7.561140 seconds
+Work took 7.565888 seconds
+==
+||
+|| Execution of solver in slurm batch script complete.
+||
+==
