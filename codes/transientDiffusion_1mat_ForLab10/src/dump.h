@@ -26,8 +26,40 @@
 //  ||                                                                            ||
 //  ================================================================================
 
+double  * * Array2D_float(int nRows,int nCols)
+{
+  double *myArray;
+  myArray = new double [ nRows * nCols ];
+    
+  // Create a pointer that points to the beginning of each new row
+
+  double * * myArray_ptr;
+  myArray_ptr = new double * [nRows];
+
+  int count = 0;
+
+  for ( int row = 0 ; row < nRows ; ++ row )
+    {
+      myArray_ptr[row] = &myArray[ count*nCols ];
+      ++count;
+    }
+
+  // Return that pointer
+  
+  return myArray_ptr;
+}
+
+
 void write_mpiio_dump(mpiInfo &myMPI)
 {
+	
+	int nTotalx = nRealx + 2;
+	int nTotaly = nRealy + 2; 
+	double **A = Array2D_float(nTotalx, nTotaly);
+  		for (int i = 1; i <= nRealx; i++) 
+    			for (int j = 1; j <= nRealy; j++)
+			      A[i][j] = i + 10.*j + myPE/10.;
+
 	MPI_Datatype myRealNodes;
 	
 	int idxStartThisPE  [2] = { 1, 1 };  // Index coordinates of the sub-array inside this PE's array, A
@@ -59,7 +91,7 @@ void write_mpiio_dump(mpiInfo &myMPI)
 
   	MPI_File_set_view (fh, 0, MPI_FLOAT, myPartOfGlobal, "native", MPI_INFO_NULL);  
 
-	MPI_File_write_all(fh, &phi[0], 1, myRealNodes, MPI_STATUS_IGNORE);
+	MPI_File_write_all(fh, &A[0][0], 1, myRealNodes, MPI_STATUS_IGNORE);
 
   	MPI_File_close(&fh);
   
