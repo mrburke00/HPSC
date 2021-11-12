@@ -1,0 +1,71 @@
+==
+||
+|| Begin Execution of fd in slurm batch script.
+||
+==
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 4 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 2
+             y-direction: 2
+No. Cells in x-direction: 5
+             y-direction: 5
+Linear solver           : jacobi
+End Time                : 2
+Time Step               : 0.01
+Plot Interval           : 0.2
+This is a restart (1/0) : 0
+
+Plotting at time = 0.19 Plot ID = 0
+Attempting to use an MPI routine after finalizing MPI
+Attempting to use an MPI routine after finalizing MPI
+Attempting to use an MPI routine after finalizing MPI
+Attempting to use an MPI routine after finalizing MPI
+
+------------------------------------
+   sb.py                            
+------------------------------------
+
+
+Read user specified file: 
+-------------------------------------
+
+File name = output.bin
+
+
+
+Matrix:
+---------------------------------------------------
+nx_total =  11
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  0.2   0.3   0.4   0.5   0.0   0.1  |    0.3   0.4   0.5   0.0   0.1  | 
+  0.4   0.5   0.0   0.1   0.2   0.3  |    0.5   0.0   0.1   0.2   0.3  | 
+  0.0   0.1   0.2   0.3   0.4   0.5  |    0.1   0.2   0.3   0.4   0.5  | 
+  0.2   0.3   0.4   0.5   0.0   0.0  |    0.3   0.4   0.5   0.0   0.0  | 
+  0.2   0.3   0.4   0.5   0.0   0.1  |    0.3   0.4   0.5   0.0   0.1  | 
+  0.4   0.5   0.0   0.1   0.2   0.3  |    0.5   0.0   0.1   0.2   0.3  | 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  0.9   1.0   0.5   0.6   0.7   0.8  |    1.0   0.5   0.6   0.7   0.8  | 
+  0.5   0.6   0.7   0.8   0.9   1.0  |    0.6   0.7   0.8   0.9   1.0  | 
+  0.7   0.8   0.9   1.0   0.0   0.0  |    0.8   0.9   1.0   0.0   0.0  | 
+  0.7   0.8   0.9   1.0   0.5   0.6  |    0.8   0.9   1.0   0.5   0.6  | 
+  0.9   1.0   0.5   0.6   0.7   0.8  |    1.0   0.5   0.6   0.7   0.8  | 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+==
+||
+|| Execution of solver in slurm batch script complete.
+||
+==
