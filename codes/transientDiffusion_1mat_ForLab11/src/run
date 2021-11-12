@@ -1,0 +1,56 @@
+#
+# Remember, on Summit:
+#
+# module load intel
+# module load impi 
+
+rm -rf *.plt
+rm -rf phi_dump.bin
+
+rm pc_phi_*
+
+#--------------------------------------------------------------------------------------------------------
+# 4PE run
+#--------------------------------------------------------------------------------------------------------
+
+mpirun -n 4 ./transientDiffusion -nPEx 2 -nPEy 2 -nCellx  3 -nCelly 3 -solver jacobi -tEnd .15  -dt .001 -tPlot .001 | tee tmp
+
+read -p "Run 4PE-1 done.  Press enter to continue"
+
+mpirun -n 4 ./transientDiffusion -nPEx 2 -nPEy 2 -nCellx  3 -nCelly 3 -solver jacobi -tEnd .3   -dt .001 -tPlot .001 -restart     
+
+read -p "Run 4PE-2 done.  Press enter to continue"
+
+./writePlotCmd.py
+
+echo
+echo
+read -p "Moving onto 9PE run.  Press enter to do so."
+echo
+echo
+
+#--------------------------------------------------------------------------------------------------------
+# 9PE run
+#--------------------------------------------------------------------------------------------------------
+
+mpirun -n 9 ./transientDiffusion -nPEx 3 -nPEy 3 -nCellx  10 -nCelly 10 -solver jacobi -tEnd .1   -dt .001 -tPlot .001   | tee tmp
+
+read -p "Run 9PE-1 done.  Press enter to continue"
+
+mpirun -n 9 ./transientDiffusion -nPEx 3 -nPEy 3 -nCellx  10 -nCelly 10 -solver jacobi -tEnd .2   -dt .001 -tPlot .001 -restart
+
+read -p "Run 9PE-2 done.  Press enter to continue"
+
+mpirun -n 9 ./transientDiffusion -nPEx 3 -nPEy 3 -nCellx  10 -nCelly 10 -solver jacobi -tEnd .3   -dt .001 -tPlot .001 -restart
+
+
+
+./writePlotCmd.py
+
+
+echo
+echo
+echo "Finished 9PE run."
+echo
+echo
+
