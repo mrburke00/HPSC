@@ -6,8 +6,8 @@ EXECUTABLE:
       
 ARGUMENTS:
 
-   initial  : ' -nPEx 2 -nPEy 2 -nCellx  60 -nCelly 60 -solver jacobi -tEnd .09   -dt .04 -tPlot .05 -restart 0 > tmp'
-   restart  : ' -nPEx 2 -nPEy 2 -nCellx  60 -nCelly 60 -solver jacobi -tEnd .5   -dt .04 -tPlot .05 -restart 1 > tmp'
+   initial  : ' -nPEx 2 -nPEy 2 -nCellx  80 -nCelly 80 -solver jacobi -tEnd .3   -dt .01 -tPlot .01 -restart  0 > tmp'
+   restart  : ' -nPEx 2 -nPEy 2 -nCellx  80 -nCelly 80 -solver jacobi -tEnd .3   -dt .01 -tPlot .01 -restart  1 > tmp'
 
 COMPLETION:
 

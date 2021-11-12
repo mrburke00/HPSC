@@ -153,7 +153,7 @@ def mySlurm(argv):
     count = 0
 
     while (True):
-        os.system('clear')
+        #os.system('clear')
 
         count += 1
 

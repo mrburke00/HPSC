@@ -150,7 +150,7 @@ def keepRunning(argv):
     count = 0
     while(True):
 
-        os.system('clear')
+        #os.system('clear')
 
         count += 1
 
@@ -184,7 +184,7 @@ def keepRunning(argv):
                 print ('It is no longer running.   Restarting it now...')
                 os.system( restartCommand + ' & ')
 
-        time.sleep(1)
+        time.sleep(2)
 
     
 
