@@ -74,7 +74,6 @@ int main(int argc, char *argv[])
        if ( !strcmp(argv[count],"-dt"      ) ) dt      = atof(argv[count+1]);
        if ( !strcmp(argv[count],"-tPlot"   ) ) tPlot   = atof(argv[count+1]);
        if ( !strcmp(argv[count],"-restart" ) ) restart = atoi(argv[count+1]);                  // <-----  TO-DO:  Make special note of this
-       //if ( !strcmp(argv[count],"-restart" ) ) restart = 1;                  // <-----  TO-DO:  Make special note of this
      }
 
    // -
@@ -135,7 +134,6 @@ int main(int argc, char *argv[])
      {
        MPI_Barrier(MPI_COMM_WORLD);
        MESH.readRestart (tStart, dt, timeSinceLastPlot, nCellx, nCelly, count, solver, myMPI );
-       //MESH.readRestart (  /* TO-DO, see corresponding routine in dump.h */ ); 
      }
 
    for ( double time = tStart ; time <= tEnd ; time += dt )
@@ -167,7 +165,6 @@ int main(int argc, char *argv[])
 	   
 	   MPI_Barrier(MPI_COMM_WORLD);
 	   MESH.writeRestart(tStart, dt, timeSinceLastPlot, nCellx, nCelly, count, solver, myMPI );
-	   //MESH.writeRestart( /* TO-DO, see corresponding routine in dump.h */   ); 
 
 	   ++count;
 	 }

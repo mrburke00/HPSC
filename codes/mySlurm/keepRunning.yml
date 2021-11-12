@@ -2,12 +2,12 @@
 EXECUTABLE:
 
    mpirun    : 'mpirun -n 4'
-   pathToExe : './transientDiffusion' 
+   pathToExe : '../transientDiffusion_1mat_ForLab11/src/./transientDiffusion' 
       
 ARGUMENTS:
 
-   initial  : ' -nPEx 2 -nPEy 2 -nCellx  40 -nCelly 40 -solver jacobi -tEnd .3   -dt .01 -tPlot .01           > tmp'
-   restart  : ' -nPEx 2 -nPEy 2 -nCellx  40 -nCelly 40 -solver jacobi -tEnd .3   -dt .01 -tPlot .01 -restart  > tmp'
+   initial  : ' -nPEx 2 -nPEy 2 -nCellx  40 -nCelly 40 -solver jacobi -tEnd .3   -dt .01 -tPlot .01 -restart 0 > tmp'
+   restart  : ' -nPEx 2 -nPEy 2 -nCellx  40 -nCelly 40 -solver jacobi -tEnd .3   -dt .01 -tPlot .01 -restart 1 > tmp'
 
 COMPLETION:
 

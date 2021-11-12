@@ -127,8 +127,10 @@ def keepRunning(argv):
     # |
     # -
     
-    stream = open(yamlFile, 'r')
-    yamlDic = yaml.load(stream,Loader=yaml.FullLoader)
+    #stream = open(yamlFile, 'r')
+    #yamlDic = yaml.load(stream,Loader=yaml.FullLoader)
+    with open(yamlFile) as parameters:
+        yamlDic = yaml.safe_load(parameters)
 
     mpirun         = yamlDic['EXECUTABLE']['mpirun'        ]
     exe            = yamlDic['EXECUTABLE']['pathToExe'     ]
@@ -138,7 +140,7 @@ def keepRunning(argv):
     completionStr  = yamlDic['COMPLETION']['completionStr' ]
 
     runCommand     = mpirun + ' ' + exe + ' ' + initialRunArgs
-    restartCommand = mpirun + ' ' + exe + ' ' + restartRunArgs   //TO-DO (what arguments should be used here, during restart?)
+    restartCommand = mpirun + ' ' + exe + ' ' + restartRunArgs   #TO-DO (what arguments should be used here, during restart?)
 
     print('Running ' + runCommand)
     os.system(runCommand + ' & ')

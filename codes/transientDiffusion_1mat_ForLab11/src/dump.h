@@ -71,7 +71,7 @@ void writeRestart(double &time             ,
    if ( solver == "jacobi" ) headerInts[2] = 1;   
    if ( solver == "cg"     ) headerInts[2] = 2;   
 
-   headerInts[3] = ////// TODO - divide total time by time between plots? //////// 
+   headerInts[3] = count ; 
    
    // Write the dump
 
@@ -125,7 +125,7 @@ void readRestart(double &time             ,
    //    [3] The number of plots files already written
    
    nCellx = headerInts[0] / myMPI.nPEx         ; 
-   nCelly = headerInts[1] / myMPI.nPEy                              ;   
+   nCelly = headerInts[1] / myMPI.nPEy         ;   
    
    if ( headerInts[2] == 1 ) solver = "jacobi" ; 
    if ( headerInts[2] == 2 ) solver = "cg"     ;
@@ -187,8 +187,8 @@ void write_mpiio_dump(VD &headerDbls , VI &headerInts , mpiInfo &myMPI)
   
   if ( myPE == 0 )
     {
-      for ( int i = 0 ; i < headerDbls.size() ; ++i ) write_mpiio_double( fh, ///NOTSURE//, offset);
-      for ( int i = 0 ; i < headerInts.size() ; ++i ) write_mpiio_int   ( fh, //NOTSURE//, offset);
+      for ( int i = 0 ; i < headerDbls.size() ; ++i ) write_mpiio_double( fh, headerDbls[i], offset);
+      for ( int i = 0 ; i < headerInts.size() ; ++i ) write_mpiio_int   ( fh, headerInts[i], offset);
     }
   MPI_Bcast( &offset , 1 , MPI_INT , 0 ,  MPI_COMM_WORLD);
   MPI_Barrier(MPI_COMM_WORLD);
@@ -311,8 +311,8 @@ void read_mpiio_dump(VD &headerDbls , VI &headerInts , mpiInfo &myMPI)
     MPI_Offset offset = 0; 
     MPI_Status  status;
     
-    for ( int i = 0 ; i < headerDbls.size() ; ++i ) read_mpiio_double( fh, //NOTSURE//, offset ); 
-    for ( int i = 0 ; i < headerInts.size() ; ++i ) read_mpiio_int   ( fh, //NOTSURE//, offset ); 
+    for ( int i = 0 ; i < headerDbls.size() ; ++i ) read_mpiio_double( fh, headerDbls[i], offset ); 
+    for ( int i = 0 ; i < headerInts.size() ; ++i ) read_mpiio_int   ( fh, headerInts[i], offset ); 
   
     MPI_Barrier(MPI_COMM_WORLD);
 

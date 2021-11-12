@@ -44,7 +44,9 @@ echo "|| Begin Execution of fd in slurm batch script."
 echo "||"
 echo "=="
 
-mpirun -n 4 $CODE/transientDiffusion ./esPIC -nPEx 3 -nPEy 3 -nCellx 10 -nCelly 10 -tEnd 2 -dt .01 -tPlot .2 > tty.out
+mpirun -n 4 ../src/./transientDiffusion -nPEx 2 -nPEy 2 -nCellx 5 -nCelly 5 -tEnd 2 -dt .01 -tPlot .2 -restart 1 > tty.out
+
+#mpirun -n 4 ../src/./transientDiffusion -nPEx 2 -nPEy 2 -nCellx 5 -nCelly 5 -tEnd 2 -dt .01 -tPlot .2 -restart 0 > tty.out
 
 echo "=="
 echo "||"

@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 import os
 import sys
 import getopt
@@ -21,14 +21,14 @@ import time
 
 def help():
 
-    print("")
-    print("")
-    print ("This script is to be run in the background.  It mimics ")
-    print ("a batch run system with queues.  Its purpose is to enable")
-    print ("the development of automatic restart capabilities without")
-    print ("having to work on a system with those capabilities.")
-    print("")
-    print("")
+    print ""
+    print ""
+    print "This script is to be run in the background.  It mimics "
+    print "a batch run system with queues.  Its purpose is to enable"
+    print "the development of automatic restart capabilities without"
+    print "having to work on a system with those capabilities."
+    print ""
+    print ""
 
 def pack(string):
     ans = string
@@ -136,12 +136,12 @@ def mySlurm(argv):
             inputFile  = arg
             
         elif opt == "-t":
-            maxTime = float(arg)
+            maxTime = arg
             
         elif opt == "--dir":
             srcDir   = arg
 
-    if maxTime < 0.: FatalError("You must provide a max time in seconds.")
+    if maxTime < 0: FatalError("You must provide a max time in seconds.")
 
     
     # -
@@ -157,19 +157,19 @@ def mySlurm(argv):
 
         count += 1
 
-        userName = 'debu7497'
+        userName = 'scott'
         jobName = 'transientDiffusion'
     
         print
-        print ('Iteration             : ' + str(count))
-        print ('Searching for this job: ' + jobName )
-        print ('Under user name       : ' + userName)
+        print 'Iteration             : ' + str(count)
+        print 'Searching for this job: ' + jobName 
+        print 'Under user name       : ' + userName
 
         psCommand = "ps -elf | grep " + userName + " | grep " + jobName + " | grep -v 'grep' "
         jobStatus = os.popen(psCommand).read()
         
         if len(jobStatus) <= 0:
-            print ('Job not found, nothing to do.')
+            print 'Job not found, nothing to do.'
             
         if len(jobStatus) > 0:
             jobStatus = jobStatus.replace('\n','')
@@ -182,14 +182,14 @@ def mySlurm(argv):
             psElapsed = psElapsed.replace('\n','')
             psSeconds = timeInSeconds(psElapsed)
 
-            print ('Found this record     : ' + jobStatus)
-            print ('Seconds running (ps)  : ' + str(psSeconds))
-            print ('Max time allowed      : ' + str(maxTime))
+            print 'Found this record     : ' + jobStatus
+            print 'Seconds running (ps)  : ' + str(psSeconds)
+            print 'Max time allowed      : ' + str(maxTime)
             print
 
             if int(psSeconds) > int(maxTime):
                 killCommand = 'kill -9 ' + str(jobID)
-                print ('Max Time Exceeded:  Killing the job with: ' + killCommand)
+                print 'Max Time Exceeded:  Killing the job with: ' + killCommand
                 os.system(killCommand)
 
         time.sleep(2)
