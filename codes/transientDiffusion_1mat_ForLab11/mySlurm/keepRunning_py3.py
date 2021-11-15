@@ -76,7 +76,7 @@ def runDone(ttyFile,completionIndicator):
         f = open(ttyFile,'r')
     except:
         print("tty file ("+ttyFile+")not found.  Assuming the job is not still running...")
-        return True 
+        return False 
     
     for line in f:
         if completionIndicator in line:
@@ -164,7 +164,7 @@ def keepRunning(argv):
         userName = 'debu7497'
         jobName = exe
     
-        psCommand = "ps -elf | grep " + userName + " | grep " + jobName + " | grep -v 'grep' "
+        psCommand = "ps -elf | grep " + userName + " | grep " + jobName + " | grep 'mpiexec.hydra' | grep -v 'grep' "
         jobStatus = os.popen(psCommand).read()
         
         print ('Searching for this job: ' + jobName )
@@ -177,7 +177,7 @@ def keepRunning(argv):
             print ('It is still running :-)')
         else:
             print ('It is no longer running.   Checking its tty output to see if it finished.')
-            if runDone( ttyOutput, jobStatus  ):
+            if runDone( ttyOutput, completionStr  ):
                 print ('It did finish.  This script (keepRunning.py) is now exiting.')
                 exit(0)
             else:
@@ -191,3 +191,4 @@ def keepRunning(argv):
 
 if __name__ == "__main__":
     keepRunning(sys.argv[1:])
+	

@@ -165,7 +165,7 @@ def mySlurm(argv):
         print ('Searching for this job: ' + jobName )
         print ('Under user name       : ' + userName)
 
-        psCommand = "ps -elf | grep " + userName + " | grep " + jobName + " | grep -v 'grep' "
+        psCommand = "ps -elf | grep " + userName + " | grep " + jobName + " | grep 'mpiexec.hydra' | grep -v 'grep' "
         jobStatus = os.popen(psCommand).read()
         
         if len(jobStatus) <= 0:
