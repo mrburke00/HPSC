@@ -14,9 +14,9 @@
 
 void cross( double *v , double *w , double *c )
 {
-  c[0] = (v[1]*w[2]) - (v[2]*w[1])
-  c[1] = (v[2]*w[0]) - (v[0]*w[2])
-  c[2] = (v[0]*w[1]) - (v[1]*w[0])
+  c[0] = (v[1]*w[2]) - (v[2]*w[1]);
+  c[1] = (v[2]*w[0]) - (v[0]*w[2]);
+  c[2] = (v[0]*w[1]) - (v[1]*w[0]);
   return;
 }
 //  ==
@@ -27,7 +27,7 @@ void cross( double *v , double *w , double *c )
 
 double dot( double *v , double *w )
 {
-  return (v[0]*w[0]) + (v[1]*w[1]) + (v[2]*w[2])
+  return (v[0]*w[0]) + (v[1]*w[1]) + (v[2]*w[2]);
 }
 
 
@@ -51,7 +51,7 @@ int Intersect_LinePlane( double *L0 , double *L , double *p0 , double *n , doubl
 
   // Dot the line's vector with the plane's normal:
   
-  double dotProduct = dot(L, n)
+  double dotProduct = dot(L, n);
 
   if ( fabs(dotProduct) < 1.e-10 ) return -1;
   

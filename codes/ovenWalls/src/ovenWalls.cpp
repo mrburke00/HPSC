@@ -177,17 +177,17 @@ int RayIsBlocked( Cylinder &cSource      ,   // Mesh from which ray is emanating
       // Vertices of potential blocker
       
       kLOOP Q0[k] = cBlocker.coord[ cBlocker.face[ blockerFaceID ][ 1 ] ][k];
-      kLOOP Q1[k] = cBlocker.coord[           TO-DO                     ][k];
-      kLOOP Q2[k] = cBlocker.coord[           TO-DO                     ][k];
-      kLOOP Q3[k] = cBlocker.coord[           TO-DO                     ][k];
+      kLOOP Q1[k] = cBlocker.coord[ cBlocker.face[ blockerFaceID ][ 2 ] ][k];
+      kLOOP Q2[k] = cBlocker.coord[ cBlocker.face[ blockerFaceID ][ 3 ] ][k];
+      kLOOP Q3[k] = cBlocker.coord[ cBlocker.face[ blockerFaceID ][ 4 ] ][k];
 
       // Normal of potential blocker
       
-      kLOOP blockerN[k] = cBlocker.normal[  TO-DO ][   TO-DO  ];  
+      kLOOP blockerN[k] = cBlocker.normal[ blockerFaceID ][  k  ];  
       
       //  Look for intersection
       
-      blocked = LineHitsFace( Ray0 , Ray , TO-DO , TO-DO , TO-DO , TO-DO , TO-DO  ); 
+      blocked = LineHitsFace( Ray0 , Ray , Q0 , Q1 , Q2 , Q3 , blockerN  ); 
 
     }
   
@@ -235,7 +235,7 @@ int main(int argc, char *argv[])
 
 
   double Ray0[3], Ray[3];
-  int sourceFaceID = TO-DO;        //  Choose source Face ID here
+  int sourceFaceID = 16;        //  Choose source Face ID here
   int targetFaceID = 51;           //  This hard-coded value can be used for debugging.  Note the loop below
                                    //     overrides it.
 
@@ -247,7 +247,7 @@ int main(int argc, char *argv[])
 
   // (2) Ray to target
 
-  for ( targetFaceID = 1 ; targetFaceID <= TO-DO ; ++targetFaceID )
+  for ( targetFaceID = 1 ; targetFaceID <= 400 ; ++targetFaceID )
     {
       kLOOP Ray [k] = CylA.center[ targetFaceID ] [k] - Ray0[k];
 
@@ -263,7 +263,7 @@ int main(int argc, char *argv[])
 	{
 	  blocked = RayIsBlocked( CylA , CylB , sourceFaceID , Ray0 , Ray , facesBlocking );
   
-	  if ( blocked ==    TO-DO   ) facesHit.push_back(targetFaceID);
+	  if ( blocked == false ) facesHit.push_back(targetFaceID);
 	}
     }
 
