@@ -1,0 +1,10 @@
+
+module purge
+
+# For compiling and running under MPI:
+
+# module load gcc
+module load pgi
+
+
+ 

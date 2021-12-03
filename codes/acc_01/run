@@ -1,0 +1,12 @@
+
+rm slurm-*.out
+
+# Interactive: 
+# ./main 
+
+# Batch:
+
+#./clean
+sbatch exe_01.bat 
+./checkRun.py
+
