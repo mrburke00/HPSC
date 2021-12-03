@@ -1,0 +1,13 @@
+./clean
+
+
+# Interactive
+#./ovenWalls -nCella_outer 10 -nCellc_outer 10  -nCella_inner 10 -nCellc_inner 10 -r_outer 10. -r_inner = 3. -lo = 10. -li = 3.
+
+
+# Batch
+sbatch exe_01.bat
+./checkRun.py
+
+
+	    
